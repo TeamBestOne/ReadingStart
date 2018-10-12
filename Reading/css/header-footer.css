@@ -476,3 +476,41 @@ p{
     height: 20px;
     color: #a6a6a6;
 }
+.footer .safety-img {
+    padding: 0 0 16px;
+}
+.footer .safety-img a {
+    width: 140px;
+    height: 52px;
+    margin-right: 14px;
+    border: 1px solid #ededed;
+    background-image: url(../img/ljs/foot_site.png);
+}
+.footer a.safety-img-01{
+    background-position: 0 0;
+}
+.footer a.safety-img-02{
+    background-position: 0 -52px;
+}
+.footer a.safety-img-03{
+    background-position: 0 -104px;
+}
+.footer a.safety-img-04{
+    background-position: 0 -156px;
+}
+.footer a.safety-img-05{
+    background-position: 0 -208px;
+}
+.footer a.safety-img-06{
+    background-position: 0 -260px;
+}
+.footer a.safety-img-07{
+    background-position: 0 -312px;
+}
+@media (max-width: 1200px){
+	.footer .safety-img a {
+	    width: 130px;
+	    height: 50px;
+	    margin-right: 8px;
+	}
+}
