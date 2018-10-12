@@ -1,0 +1,25 @@
+//自动登录
+$(function(){
+	var index=1;
+	$(".login-check").click(function(){	
+		if(index==1){
+			index=0;
+			$(this).addClass("login-check-act");
+		}else{
+			index=1;
+			$(this).removeClass("login-check-act");
+		}
+	})
+	$(".login-check").hover(function(){
+		$(this).addClass("login-check-hover");
+	},function(){
+		$(this).removeClass("login-check-hover");
+	})
+})
+$(function(){
+	$(".btnlogin").hover(function(){
+		$(this).css("background-color","#ED4259");
+	},function(){
+		$(this).css("background-color","#BF2C24");
+	})
+})
