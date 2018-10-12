@@ -1,0 +1,187 @@
+body>div{
+	background-color: #eaeded;
+}
+.index_2{
+	padding: 20px 30px;
+}
+.index_2 .row .img-thumbnail{
+	width: 315px;
+	padding: 27px 27px;
+	margin-right: 14px;
+}
+.index_2 .row .img-thumbnail>p{
+	font-size: 20px;
+}
+.index_2 .row .img-thumbnail>div a{
+	display: block;
+	margin-top: 50px;
+}
+.index_2 .row .img-thumbnail>div a:hover{
+	color: #D58512;
+}
+.index_2_img{
+	margin-top: 15px;
+	width: 315px;
+	background-color: white;
+}
+.index_2>a:hover{
+	color: #E68405;
+}
+
+/*.index_3{
+	width: 1305px;
+	margin: 20px auto;
+	margin-bottom: 10px!important;
+	padding-bottom: 0 !important;
+	padding: 20px 20px;
+	background-color: white;
+	position: relative;
+	overflow: hidden;
+	
+}*/
+.index_scroll>b{position: absolute;cursor: pointer;z-index: 10;}
+.slide_l{
+	top: 40%;
+}
+.slide_r{
+	top: 40%;
+	right: 10px;
+}
+.index_public_p{
+	
+	font-size: 20px;
+}
+.index_public_p>a{
+	margin-left: 5px;
+}
+.slideLR{
+	width: 3699px;
+}
+.slideLR>ul li{
+	padding-right: 20px;
+	min-width: 190px;
+	position: relative;
+	/*text-align: center;*/
+}
+.slideLR>ul li img{cursor: pointer;}
+.slideLR>ul li>del{
+	color: #767676;
+}
+.slideLR>ul li>button{
+	width: 70%;
+	height: 30px;
+	position: absolute;
+	bottom: 10px;
+	left: 6%;
+	display: none;
+	font-size: 12px;
+	border-radius: 3px;
+	border: 1px #82858a solid;
+	background-color: #eceef1;
+	font-weight: bold;
+}
+.slideLR>ul li>button:hover{
+	background-color: #dfe2e7;
+	
+}
+
+.index_4{
+	width: 1300px;
+	margin: 0 auto;
+	background-color: white;
+	padding: 20px 0px;
+}
+.index_4>ul li:first-child{
+	border-right: 1px #e7e7e7 solid;
+}
+.index_5{
+	width: 1300px;
+	margin: 0 auto;
+	background-color: white;
+	padding: 30px 20px;
+}
+.index_5_l>p{
+	font-size: 20px;
+	color: #444444;
+}
+.index_5_r{
+	position: relative;
+	width: 850px;
+	overflow: hidden;
+	margin-left: 10px;
+}
+.index_5_r>b{
+	position: absolute;
+	top: 38%;
+	cursor: pointer;
+}
+.index5_r_r{right: 0px;}
+.index_5_r>div{
+	width: 1350px;
+	padding-top: 10px;
+}
+.index_5_r>div>div{
+	width: 180px;
+	margin-right: 10px;
+	padding: 15px;
+	border: 2px solid transparent;
+}
+.index_5_r>div>div:hover{border: 2px solid #ff8f00;}
+.index_5_r>div>div img{
+	cursor: pointer;
+	
+}
+.index_5_r>div>div button{
+	width: 150px;
+	height: 30px;
+	color: #584d31;
+	background-color: #f3ce74;
+	border: 1px #a88734 solid;
+}
+.index_5_r>div>div button:hover{
+	background-color: #eebd40;
+}
+.index_5_r>div>div a:hover{color: #E47923;}
+
+.index_6{
+	width: 1300px;
+	margin: 0 auto;
+	background-color: white;
+	padding: 20px 0px 40px 0px;
+	margin-bottom: 20px;
+}
+
+
+/*滚动条*/
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+.index_scroll{
+	overflow-x: auto;
+	/*display: none;*/
+}
+.index_scroll::-webkit-scrollbar
+{
+    width: 10px;
+    height: 5px;
+    background-color: white;
+}
+ 
+/*定义滚动条轨道 内阴影+圆角*/
+.index_scroll::-webkit-scrollbar-track
+{
+    /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+    border-radius: 10px;
+    background-color: white;
+}
+ 
+/*定义滑块 内阴影+圆角*/
+.index_scroll::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: gainsboro;
+}
+/*00*/
+
+
+
+/**/

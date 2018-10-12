@@ -1,0 +1,293 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	font-size: 1em;
+}
+/*头部*/
+header{
+	width: 100%;
+	background: #3e3d43;
+	/*height: 47px;*/
+	}
+.nav-wrap{
+	width: 1200px;
+	margin: 0 auto;
+}
+@media (max-width:1200px ){
+.nav-wrap
+{
+	width: 1050px;
+	margin: 0 auto;
+}
+}
+.nav-list-fl{float: left;}
+.fl{margin-bottom: 0!important;}
+.fr{margin-bottom: 0!important;}
+.fl li{
+	padding: 10px 15px;
+	border-top: 2px #3e3d43 solid;
+	cursor: pointer;
+	height: 46px;
+}
+.fl li:hover{
+	border-top: 2px red solid;
+	background: #2b2a2e;
+}
+.fl li:nth-of-type(1)>a:link,.fl li:nth-of-type(1)>a:visited{
+	color: white;
+	font-size: 16px !important;
+}
+.fl li:nth-of-type(9){
+	position: relative;
+}
+.fl li a{font-size: 14px;}
+.fl li a:link,.fl li a:visited{
+	text-decoration: none;
+	color: #ccc;
+}
+.fl li a:hover{
+	color: white;
+}
+.nav-list-fr{float: right;font-size: 14px;margin-bottom: 0!important;}
+.fr li{padding: 10px 5px;}
+.search{
+	background: #3e3d43;
+	width: 150px;
+	height:26px;
+	border: none;
+	border-bottom: 1px solid #aaa;
+	}
+.fr li a:link,.fr li a:visited{
+	text-decoration: none;
+	color: #ccc;
+}
+.fr li a:hover{
+	color: white;
+}
+.fr li:nth-of-type(2){
+	cursor: pointer;
+}
+.fr li:nth-of-type(3){
+	color:#515056;
+}
+.fr li:nth-of-type(6){
+	color:#515056;
+}
+.fr li:nth-of-type(7)>a:link,.fr li:nth-of-type(7)>a:visited{
+	color: white;
+}
+.fr li:nth-of-type(7):hover{background: #2b2a2e;}
+/*头部广告*/
+.bn-box{
+	position: absolute; 
+	background: url(../img/image1/banner-free.jpg);
+	background-position: 50% 0;
+	background-size: cover;
+	width: 100%;  
+	z-index: 1!important;
+}
+@media (max-width: 1920px) {
+.bn-box{
+	height: 292px;
+   }
+}
+@media (max-width: 1440px) {
+ .bn-box{
+	
+	height: 220px;
+   }
+}
+@media (max-width: 1280px) {
+.bn-box{
+	
+	height: 180px;
+}
+}
+
+.hot-game{
+	display: block;
+	position: absolute;
+	right: 0px;
+	padding: 4px 8px;
+	background:#666 ;
+	background: rgba(0,0,0,.3);
+	cursor: pointer;
+	z-index: 5;
+	color: white;
+	
+}
+.bn-link{
+	width: 990px;
+	margin: 0 auto;
+	color: white;
+	margin-top: 18px;
+}
+.bn-sp{
+	display: inline-block;
+	padding: 4px 6px;
+	background:#666 ;
+	background: rgba(0,0,0,.3);
+	border-radius: 5px;
+}
+.bn-sp a:link,.bn-sp a:visited{color: white;text-decoration: none;}
+.bn-sp a:hover{color: white;}
+/*图书详情*/
+.btn-content{
+	margin-top: 100px;
+	position: relative;
+	z-index: 1;
+}
+.btn-content-information{
+	position: relative;
+	width: 990px;
+	margin: 0 auto;
+	background: white;
+	/*border: 2px solid rgba(0,0,0,.1);*/
+}
+
+.flag{
+	position: absolute;
+    top: -3px;
+    right: 0px;
+	width: 65px;
+	height: 65px;
+	background: url(../img/image1/sprite.385d7.png) no-repeat;
+	background-position: -79px -82px;
+}
+.book-img{
+	width: 142px !important;
+	height: 192px !important;
+	
+	padding-right: 0;
+	
+}
+.book-img img{
+	width: 142px;
+	margin: 20px!important;
+	box-shadow: 0 1px 6px rgba(0,0,0,.35), 0 0 5px #f9f2e9 inset;
+}
+.writer{font-size: 16px;}
+.writer a{margin:0 10px 0 20px;}
+.writer a:link,.writer a:visited{color: black;text-decoration: none;}
+.writer a:hover{color: red;}
+.media-ul{margin :15px 0;}
+.media-ul li{
+	padding: 3px 10px;
+	border-radius: 12px;
+	margin: 0 2px;
+}
+.bor{border: solid 1px #9fadc9;}
+.bor1{border: solid 1px #ffb0b4;cursor: pointer;}
+.intro{font-size: 16px;margin-bottom: 11px;overflow: hidden;}
+.media-num strong{font-size: 18px;color: black;}
+.media-num{color: gray;}
+.red-btn{
+	padding: 10px 25px;
+	color: white;
+	background: #bf2c24;
+	border:solid 1px #bf2c24;
+	font-size: 15px;
+}
+.red-btn:hover{color: white;}
+.red-btn:hover{
+	border-color: #ed4259;
+    background: #ed4259;
+}
+.blue-btn{
+	padding: 10px 25px;
+	color:#3f5a93;
+	border:solid 1px #3f5a93;
+	font-size: 15px;
+}
+.blue-btn:hover{
+	background: paleturquoise;
+}
+.p-btn{
+	margin-top: 20px;
+}
+.p-btn a:nth-of-type(2){
+	margin:0 15px;
+}
+.p-btn a:link{text-decoration: none;}
+.book-score{
+	position: absolute;
+	top: 11px;
+	right:39px;
+	text-align: right;
+}
+.book-score>span{font-size: 37px;font-weight: 700;}
+.book-score>span i{font-size: 30px;}
+.book-score p:first>span{margin-right: 5px;color: gray;}
+.book-score p:nth-of-type(3) a{margin: 45px 0 0 10px;display: inline-block;font-size: 14px;}
+.book-score p:nth-of-type(3) a:hover{
+	color:blue;
+}
+.book-score p:nth-of-type(3) a:link{text-decoration: none;}
+.detail-tab{   border-bottom: 1px solid #e6e6e6;margin-bottom: 34px;}
+.t1{font-size: 18px;margin-bottom: 0;}
+.t1 li{border-bottom: 2px solid white;margin-right: 5px;padding:0 23px  5px 23px;}
+.t1 li:first-child{
+	border-bottom: 2px solid #ed4259;
+	
+}
+.t1 li a:link,.t1 li a:visited{color: gray;text-decoration: none;}
+.t1 li a:hover{color: #ed4259;}
+/*作品信息*/
+.goods-msg>p:first-child{font-size: 15px;line-height: 27px; border-bottom: 1px solid #e6e6e6;padding-bottom: 20px;}
+.goods-msg{width: 700px;}
+.goods-msg-type{margin-top: 20px;}
+.goods-msg-type li>div{float:left;width:542px;border-bottom: 1px solid #e6e6e6;margin-bottom: 20px;padding-bottom: 20px;}
+.margins{margin-left: 52px;}
+.goods-msg-type li strong{float:left;color: gray;font-size: 17px;font-weight: normal;margin-right: 15px;}
+.goods-msg-type li:first-child span{
+	margin: 4px;
+	padding: 3px 5px;
+	color: #2972cc;
+	border: solid 1px #2972cc;
+	border-radius: 15px;
+	vertical-align: sub;
+}
+.honor img{
+	float: left;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+.honor a{float:left;line-height: 50px;}
+.honor a:hover{text-decoration: none;color: blue;}
+.margins i{margin: 0 10px;}
+.margins span{color: gray;}
+.goods-msg h3{margin-top: 20px;font-size: 22px;}
+/*粉丝互动*/
+.fans{
+	background: #f7f6f2;
+}
+.fans li:first-child h4{}
+
+
+
+
+
+/*下拉菜单1*/
+.menu1{
+	position: absolute;
+	left: 0px;
+	top: 40px;
+	width: 86px;
+	background: #3e3d43;
+	z-index: 50;
+}
+.menu1 li{border-top:none!important ;padding-right: 25px;}
+.menu1 li:hover{background: gray;}
+
+
+/*公共样式*/
+.display{
+	display: none;
+}
+.sty-a{font-size: 15px;}
+.sty-a:link,.sty-a:visited{color:#3f5a93 ;}
+.sty-a:hover{text-decoration: none;color: blue;}
+
