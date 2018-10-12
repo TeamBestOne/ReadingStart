@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>全部作品</title>
+		<link rel="stylesheet" type="text/css" href="css/allworks.css"/>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
+		<script src="bootstrap/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/allworks.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--全部作品页面的主题界面-->
+		<div class="worksmain">
+			<div class="worksmain_aside pull-left">
+				<div class="worksmain_aside_title">
+					<ul>
+						<li class="pull-left worksmain_aside_title_select"><a>男生</a></li>
+						<li class="pull-left"><a>女生</a></li>
+						<li class="pull-left"><a>出版</a></li>
+					</ul>
+				</div>
+				<div class="worksmain_aside_selected">
+					<p><strong>已选</strong></p>
+					<span>全部</span>
+				</div>
+				<!--男生-->
+				<div class="worksmain_aside_selectlist">
+					<!--分类-->
+					<div class="worksmain_aside_selectlist_per">
+						<strong><p>分类</p></strong>
+						<ul class="list-unstyled list-inline">
+							<li class="selectlist_per_li_selected"><a>全部</a></li>
+							<li><a>玄幻</a></li>
+							<li><a>奇幻</a></li>
+							<li><a>武侠</a></li>
+							<li><a>仙侠</a></li>
+						</ul>
+						<ul class="list-unstyled list-inline">
+							<li><a>都市</a></li>
+							<li><a>现实</a></li>
+							<li><a>军事</a></li>
+							<li><a>历史</a></li>
+							<li><a>游戏</a></li>
+						</ul>
+						<ul class="list-unstyled list-inline">
+							<li><a>体育</a></li>
+							<li><a>灵异</a></li>
+							<li><a>二次元</a></li>
+							<li><a>短篇</a></li>
+						</ul>
+					</div>
+					<!--状态-->
+					<div class="worksmain_aside_selectlist_per">
+						<strong><p>状态</p></strong>
+						<ul class="list-unstyled list-inline">
+							<li class="selectlist_per_li_selected"><a>全部</li>
+							<li><a>玄幻</a></li>
+							<li><a>奇幻</a></li>
+							<li><a>武侠</a></li>
+							<li><a>仙侠</a></li>
+						</ul>
+					</div>
+					<!--属性-->
+					<div class="worksmain_aside_selectlist_per">
+						<strong><p>属性</p></strong>
+						<ul class="list-unstyled list-inline">
+							<li class="selectlist_per_li_selected"><a>全部</a></li>
+							<li><a>玄幻</a></li>
+							<li><a>奇幻</a></li>
+							<li><a>武侠</a></li>
+							<li><a>仙侠</a></li>
+						</ul>
+					</div>
+					<!--字数-->
+					<div class="worksmain_aside_selectlist_per">
+						<strong><p>字数</p></strong>
+						<ul class="list-unstyled list-inline">
+							<li class="selectlist_per_li_selected"><a>全部</a></li>
+							<li><a>玄幻</a></li>
+							<li><a>奇幻</a></li>
+							<li><a>武侠</a></li>
+							<li><a>仙侠</a></li>
+						</ul>
+					</div>
+					<!--品质-->
+					<div class="worksmain_aside_selectlist_per">
+						<strong><p>品质</p></strong>
+						<ul class="list-unstyled list-inline">
+							<li class="selectlist_per_li_selected"><a>全部</a></li>
+							<li><a>玄幻</a></li>
+							<li><a>奇幻</a></li>
+							<li><a>武侠</a></li>
+							<li><a>仙侠</a></li>
+						</ul>
+					</div>
+					<!--更新时间-->
+					<div class="worksmain_aside_selectlist_per">
+						<strong><p>更新时间</p></strong>
+						<ul class="list-unstyled list-inline">
+							<li class="selectlist_per_li_selected"><a>全部</a></li>
+							<li><a>玄幻</a></li>
+							<li><a>奇幻</a></li>
+							<li><a>武侠</a></li>
+							<li><a>仙侠</a></li>
+						</ul>
+					</div>
+					<!--标签-->
+					<div class="worksmain_aside_selectlist_per">
+						<strong><p>标签</p></strong>
+						<ul class="list-unstyled list-inline">
+							<li class="selectlist_per_li_selected"><a>全部</a></li>
+							<li><a>玄幻</a></li>
+							<li><a>奇幻</a></li>
+							<li><a>武侠</a></li>
+							<li><a>仙侠</a></li>
+						</ul>
+					</div>
+				</div>
+				<!--女生-->
+				<div class="worksmain_aside_selectlist display_hidden">
+					<!--分类-->
+					<div class="worksmain_aside_selectlist_per">
+						<strong><p>分类</p></strong>
+						<ul class="list-unstyled list-inline">
+							<li class="selectlist_per_li_selected"><a>全部</a></li>
+							<li><a>玄幻</a></li>
+							<li><a>奇幻</a></li>
+							<li><a>武侠</a></li>
+							<li><a>仙侠</a></li>
+						</ul>
+						<ul class="list-unstyled list-inline">
+							<li><a>都市</a></li>
+							<li><a>现实</a></li>
+							<li><a>军事</a></li>
+							<li><a>历史</a></li>
+							<li><a>游戏</a></li>
+						</ul>
+						<ul class="list-unstyled list-inline">
+							<li><a>体育</a></li>
+							<li><a>灵异</a></li>
+							<li><a>二次元</a></li>
+							<li><a>短篇</a></li>
+						</ul>
+					</div>
+					<!--状态-->
+					<div class="worksmain_aside_selectlist_per">
+						<strong><p>状态</p></strong>
+						<ul class="list-unstyled list-inline">
+							<li class="selectlist_per_li_selected"><a>全部</li>
+							<li><a>玄幻</a></li>
+							<li><a>奇幻</a></li>
+							<li><a>武侠</a></li>
+							<li><a>仙侠</a></li>
+						</ul>
+					</div>
+					<!--属性-->
+					<div class="worksmain_aside_selectlist_per">
+						<strong><p>属性</p></strong>
+						<ul class="list-unstyled list-inline">
+							<li class="selectlist_per_li_selected"><a>全部</a></li>
+							<li><a>玄幻</a></li>
+							<li><a>奇幻</a></li>
+							<li><a>武侠</a></li>
+							<li><a>仙侠</a></li>
+						</ul>
+					</div>
+					<!--字数-->
+					<div class="worksmain_aside_selectlist_per">
+						<strong><p>字数</p></strong>
+						<ul class="list-unstyled list-inline">
+							<li class="selectlist_per_li_selected"><a>全部</a></li>
+							<li><a>玄幻</a></li>
+							<li><a>奇幻</a></li>
+							<li><a>武侠</a></li>
+							<li><a>仙侠</a></li>
+						</ul>
+					</div>
+					<!--品质-->
+					<div class="worksmain_aside_selectlist_per">
+						<strong><p>品质</p></strong>
+						<ul class="list-unstyled list-inline">
+							<li class="selectlist_per_li_selected"><a>全部</a></li>
+							<li><a>玄幻</a></li>
+							<li><a>奇幻</a></li>
+							<li><a>武侠</a></li>
+							<li><a>仙侠</a></li>
+						</ul>
+					</div>
+					<!--更新时间-->
+					<div class="worksmain_aside_selectlist_per">
+						<strong><p>更新时间</p></strong>
+						<ul class="list-unstyled list-inline">
+							<li class="selectlist_per_li_selected"><a>全部</a></li>
+							<li><a>玄幻</a></li>
+							<li><a>奇幻</a></li>
+							<li><a>武侠</a></li>
+							<li><a>仙侠</a></li>
+						</ul>
+					</div>
+					<!--标签-->
+					<div class="worksmain_aside_selectlist_per">
+						<strong><p>标签</p></strong>
+						<ul class="list-unstyled list-inline">
+							<li class="selectlist_per_li_selected"><a>全部</a></li>
+							<li><a>玄幻</a></li>
+							<li><a>奇幻</a></li>
+							<li><a>武侠</a></li>
+							<li><a>仙侠</a></li>
+						</ul>
+					</div>
+				</div>
+				<!--出版-->
+				<div class="worksmain_aside_selectlist display_hidden">
+					<!--分类-->
+					<div class="worksmain_aside_selectlist_per">
+						<strong><p>分类</p></strong>
+						<ul class="list-unstyled list-inline">
+							<li class="selectlist_per_li_selected"><a>全部</a></li>
+							<li><a>玄幻</a></li>
+							<li><a>奇幻</a></li>
+							<li><a>武侠</a></li>
+							<li><a>仙侠</a></li>
+						</ul>
+						<ul class="list-unstyled list-inline">
+							<li><a>都市</a></li>
+							<li><a>现实</a></li>
+							<li><a>军事</a></li>
+							<li><a>历史</a></li>
+							<li><a>游戏</a></li>
+						</ul>
+						<ul class="list-unstyled list-inline">
+							<li><a>体育</a></li>
+							<li><a>灵异</a></li>
+							<li><a>二次元</a></li>
+							<li><a>短篇</a></li>
+						</ul>
+					</div>
+					<!--状态-->
+					<div class="worksmain_aside_selectlist_per">
+						<strong><p>状态</p></strong>
+						<ul class="list-unstyled list-inline">
+							<li class="selectlist_per_li_selected"><a>全部</li>
+							<li><a>玄幻</a></li>
+							<li><a>奇幻</a></li>
+							<li><a>武侠</a></li>
+							<li><a>仙侠</a></li>
+						</ul>
+					</div>
+					<!--属性-->
+					<div class="worksmain_aside_selectlist_per">
+						<strong><p>属性</p></strong>
+						<ul class="list-unstyled list-inline">
+							<li class="selectlist_per_li_selected"><a>全部</a></li>
+							<li><a>玄幻</a></li>
+							<li><a>奇幻</a></li>
+							<li><a>武侠</a></li>
+							<li><a>仙侠</a></li>
+						</ul>
+					</div>
+					<!--字数-->
+					<div class="worksmain_aside_selectlist_per">
+						<strong><p>字数</p></strong>
+						<ul class="list-unstyled list-inline">
+							<li class="selectlist_per_li_selected"><a>全部</a></li>
+							<li><a>玄幻</a></li>
+							<li><a>奇幻</a></li>
+							<li><a>武侠</a></li>
+							<li><a>仙侠</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="worksmain_main pull-right">
+				<div class="navbar worksmain_main_head" style="height: 40px;">
+					<ul class="list-unstyled list-inline">
+						<li><a href="">人气排序</a><i class="iconfont">&#xe604;	</i></li>
+						<li><a href="">更新时间</a><i class="iconfont">&#xe604;	</i></li>
+						<li><a href="">总收藏</a><i class="iconfont">&#xe604;	</i></li>
+						<li><a href="">总字数</a><i class="iconfont">&#xe604;	</i></li>
+						<li><a href="">会员点击</a><i class="iconfont">&#xe600;</i></li>
+						<li><a href="">推荐票</a><i class="iconfont">&#xe600;</i></li>
+						<em>|</em>
+						<li>
+							<input type="checkbox" id="checkthree><label for="checkthree">3个月内新书</label>
+						</li>
+						<em>|</em>
+						<li class="pull-right">
+							共44865本相关作品<i class="iconfont">&#xe618;</i><em>|</em><i class="iconfont">&#xe603;</i><i class="iconfont">&#xe613;</i>							
+						</li>
+					</ul>
+				</div>
+				<div class="worksmain_main_books">
+					<ul class="list-unstyled list-inline">
+						<!--1-->
+						<li>
+							<div class="books_img fl">
+								<a href="">
+									<img src="img/img_slin/books_1.jpg"/>
+								</a>
+							</div>
+							<div class="books_info fl">
+								<h4><a href="">圣墟</a></h4>
+								<div class="books_info_author">
+									<i class="iconfont">&#xe634;</i>
+									<a href="">辰东</a><em>|</em>
+									<a href="">玄幻</a><strong>·</strong>
+									<a href="">东方玄幻</a><em>|</em>
+									<span>连载中</span>
+								</div>
+								<p class="books_info_intro">在破败中崛起，在寂灭中复苏。沧海成尘，雷电枯竭，那一缕幽雾又一次临近大地，世间的枷锁被打开了，一个全新的世界就此揭开神秘的一角……</p>
+								<span class="books_info_words">443.18万字</span>
+							</div>
+						</li>
+						<!--2-->
+						<li>
+							<div class="books_img fl">
+								<a href="">
+									<img src="img/img_slin/books_2.jpg"/>
+								</a>
+							</div>
+							<div class="books_info fl">
+								<h4><a href="">诡秘之主</a></h4>
+								<div class="books_info_author">
+									<i class="iconfont">&#xe634;</i>
+									<a href="">爱潜水的乌贼</a><em>|</em>
+									<a href="">玄幻</a><strong>·</strong>
+									<a href="">异世大陆</a><em>|</em>
+									<span>连载中</span><em>|</em>
+									<a href="">二次元</a>
+								</div>
+								<p class="books_info_intro">蒸汽与机械的浪潮中，谁能触及非凡？历史和黑暗的迷雾里，又是谁在耳语？我从诡秘中醒来，睁眼看见这个</p>
+								<span class="books_info_words">131.21万字</span>
+							</div>
+						</li>
+						<!--3-->
+						<li>
+							<div class="books_img fl">
+								<a href="">
+									<img src="img/img_slin/books_3.jpg"/>
+								</a>
+							</div>
+							<div class="books_info fl">
+								<h4><a href="">牧神记</a></h4>
+								<div class="books_info_author">
+									<i class="iconfont">&#xe634;</i>
+									<a href="">辰东</a><em>|</em>
+									<a href="">玄幻</a><strong>·</strong>
+									<a href="">东方玄幻</a><em>|</em>
+									<span>连载中</span>
+								</div>
+								<p class="books_info_intro">在破败中崛起，在寂灭中复苏。沧海成尘，雷电枯竭，那一缕幽雾又一次临近大地，世间的枷锁被打开了，一个全新的世界就此揭开神秘的一角……</p>
+								<span class="books_info_words">443.18万字</span>
+							</div>
+						</li>
+						<!--4-->
+						<li>
+							<div class="books_img fl">
+								<a href="">
+									<img src="img/img_slin/books_4.jpg"/>
+								</a>
+							</div>
+							<div class="books_info fl">
+								<h4><a href="">圣墟</a></h4>
+								<div class="books_info_author">
+									<i class="iconfont">&#xe634;</i>
+									<a href="">辰东</a><em>|</em>
+									<a href="">玄幻</a><strong>·</strong>
+									<a href="">东方玄幻</a><em>|</em>
+									<span>连载中</span>
+								</div>
+								<p class="books_info_intro">在破败中崛起，在寂灭中复苏。沧海成尘，雷电枯竭，那一缕幽雾又一次临近大地，世间的枷锁被打开了，一个全新的世界就此揭开神秘的一角……</p>
+								<span class="books_info_words">443.18万字</span>
+							</div>
+						</li>
+						<!--5-->
+						<li>
+							<div class="books_img fl">
+								<a href="">
+									<img src="img/img_slin/books_5.jpg"/>
+								</a>
+							</div>
+							<div class="books_info fl">
+								<h4><a href="">圣墟</a></h4>
+								<div class="books_info_author">
+									<i class="iconfont">&#xe634;</i>
+									<a href="">辰东</a><em>|</em>
+									<a href="">玄幻</a><strong>·</strong>
+									<a href="">东方玄幻</a><em>|</em>
+									<span>连载中</span>
+								</div>
+								<p class="books_info_intro">在破败中崛起，在寂灭中复苏。沧海成尘，雷电枯竭，那一缕幽雾又一次临近大地，世间的枷锁被打开了，一个全新的世界就此揭开神秘的一角……</p>
+								<span class="books_info_words">443.18万字</span>
+							</div>
+						</li>
+						<!--6-->
+						<li>
+							<div class="books_img fl">
+								<a href="">
+									<img src="img/img_slin/books_6.jpg"/>
+								</a>
+							</div>
+							<div class="books_info fl">
+								<h4><a href="">诡秘之主</a></h4>
+								<div class="books_info_author">
+									<i class="iconfont">&#xe634;</i>
+									<a href="">爱潜水的乌贼</a><em>|</em>
+									<a href="">玄幻</a><strong>·</strong>
+									<a href="">异世大陆</a><em>|</em>
+									<span>连载中</span><em>|</em>
+									<a href="">二次元</a>
+								</div>
+								<p class="books_info_intro">蒸汽与机械的浪潮中，谁能触及非凡？历史和黑暗的迷雾里，又是谁在耳语？我从诡秘中醒来，睁眼看见这个</p>
+								<span class="books_info_words">131.21万字</span>
+							</div>
+						</li>
+						<!--7-->
+						<li>
+							<div class="books_img fl">
+								<a href="">
+									<img src="img/img_slin/books_7.jpg"/>
+								</a>
+							</div>
+							<div class="books_info fl">
+								<h4><a href="">牧神记</a></h4>
+								<div class="books_info_author">
+									<i class="iconfont">&#xe634;</i>
+									<a href="">辰东</a><em>|</em>
+									<a href="">玄幻</a><strong>·</strong>
+									<a href="">东方玄幻</a><em>|</em>
+									<span>连载中</span>
+								</div>
+								<p class="books_info_intro">在破败中崛起，在寂灭中复苏。沧海成尘，雷电枯竭，那一缕幽雾又一次临近大地，世间的枷锁被打开了，一个全新的世界就此揭开神秘的一角……</p>
+								<span class="books_info_words">443.18万字</span>
+							</div>
+						</li>
+						<!--8-->
+						<li>
+							<div class="books_img fl">
+								<a href="">
+									<img src="img/img_slin/books_8.jpg"/>
+								</a>
+							</div>
+							<div class="books_info fl">
+								<h4><a href="">圣墟</a></h4>
+								<div class="books_info_author">
+									<i class="iconfont">&#xe634;</i>
+									<a href="">辰东</a><em>|</em>
+									<a href="">玄幻</a><strong>·</strong>
+									<a href="">东方玄幻</a><em>|</em>
+									<span>连载中</span>
+								</div>
+								<p class="books_info_intro">在破败中崛起，在寂灭中复苏。沧海成尘，雷电枯竭，那一缕幽雾又一次临近大地，世间的枷锁被打开了，一个全新的世界就此揭开神秘的一角……</p>
+								<span class="books_info_words">443.18万字</span>
+							</div>
+						</li>
+						<!--9-->
+						<li>
+							<div class="books_img fl">
+								<a href="">
+									<img src="img/img_slin/books_9.jpg"/>
+								</a>
+							</div>
+							<div class="books_info fl">
+								<h4><a href="">圣墟</a></h4>
+								<div class="books_info_author">
+									<i class="iconfont">&#xe634;</i>
+									<a href="">辰东</a><em>|</em>
+									<a href="">玄幻</a><strong>·</strong>
+									<a href="">东方玄幻</a><em>|</em>
+									<span>连载中</span>
+								</div>
+								<p class="books_info_intro">在破败中崛起，在寂灭中复苏。沧海成尘，雷电枯竭，那一缕幽雾又一次临近大地，世间的枷锁被打开了，一个全新的世界就此揭开神秘的一角……</p>
+								<span class="books_info_words">443.18万字</span>
+							</div>
+						</li>
+						<!--10-->
+						<li>
+							<div class="books_img fl">
+								<a href="">
+									<img src="img/img_slin/books_10.jpg"/>
+								</a>
+							</div>
+							<div class="books_info fl">
+								<h4><a href="">诡秘之主</a></h4>
+								<div class="books_info_author">
+									<i class="iconfont">&#xe634;</i>
+									<a href="">爱潜水的乌贼</a><em>|</em>
+									<a href="">玄幻</a><strong>·</strong>
+									<a href="">异世大陆</a><em>|</em>
+									<span>连载中</span><em>|</em>
+									<a href="">二次元</a>
+								</div>
+								<p class="books_info_intro">蒸汽与机械的浪潮中，谁能触及非凡？历史和黑暗的迷雾里，又是谁在耳语？我从诡秘中醒来，睁眼看见这个</p>
+								<span class="books_info_words">131.21万字</span>
+							</div>
+						</li>
+						<!--11-->
+						<li>
+							<div class="books_img fl">
+								<a href="">
+									<img src="img/img_slin/books_11.jpg"/>
+								</a>
+							</div>
+							<div class="books_info fl">
+								<h4><a href="">牧神记</a></h4>
+								<div class="books_info_author">
+									<i class="iconfont">&#xe634;</i>
+									<a href="">辰东</a><em>|</em>
+									<a href="">玄幻</a><strong>·</strong>
+									<a href="">东方玄幻</a><em>|</em>
+									<span>连载中</span>
+								</div>
+								<p class="books_info_intro">在破败中崛起，在寂灭中复苏。沧海成尘，雷电枯竭，那一缕幽雾又一次临近大地，世间的枷锁被打开了，一个全新的世界就此揭开神秘的一角……</p>
+								<span class="books_info_words">443.18万字</span>
+							</div>
+						</li>
+						<!--12-->
+						<li>
+							<div class="books_img fl">
+								<a href="">
+									<img src="img/img_slin/books_12.jpg"/>
+								</a>
+							</div>
+							<div class="books_info fl">
+								<h4><a href="">圣墟</a></h4>
+								<div class="books_info_author">
+									<i class="iconfont">&#xe634;</i>
+									<a href="">辰东</a><em>|</em>
+									<a href="">玄幻</a><strong>·</strong>
+									<a href="">东方玄幻</a><em>|</em>
+									<span>连载中</span>
+								</div>
+								<p class="books_info_intro">在破败中崛起，在寂灭中复苏。沧海成尘，雷电枯竭，那一缕幽雾又一次临近大地，世间的枷锁被打开了，一个全新的世界就此揭开神秘的一角……</p>
+								<span class="books_info_words">443.18万字</span>
+							</div>
+						</li>
+					</ul>
+				<div class="worksmain_main_page pull-right">
+					<div class="worksmain_main_page_list pull-left">
+						<ul class="list-inline list-unstyled">
+							<li><a href=""><</a></li>
+							<li><a href="" class="page_list_thispage">1</a></li>
+							<li><a href="">2</a></li>
+							<li><a href="">3</a></li>
+							<li><a href="">4</a></li>
+							<li><a href="">5</a></li>
+							<li><span>...</span></li>
+							<li><a href="">2399</a></li>
+							<li><a href="">></a></li>	
+						</ul>
+					</div>
+					<div class="worksmain_main_page_search pull-left">
+						<input type="text" name="" id="" value="1" />
+						<a href="">GO</a>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</body>
+</html>
