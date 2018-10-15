@@ -2,8 +2,151 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>账号注册</title>
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+		<script src="js/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/register.js" type="text/javascript" charset="utf-8"></script>	
+		<link rel="stylesheet" type="text/css" href="css/header-footer.css"/>
+			
+		<!--引入图片验证-->
+		<script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+		<!--引用bootstrap-->
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
+		<script src="bootstrap/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="bootstrap/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
+		<!--头部-->
+		<header>
+			<div class="box-center clearfix">
+				<div class="hd-logo clearfix">
+					<a href="index.html"></a>
+					<em></em>
+					<span>用户注册</span>
+				</div>
+			</div>
+		</header>
+		<!--主内容-->
+		<div class="box-center">
+			<!--步骤-->
+			<div class="reg-wrap">
+				<div class="reg-step">
+		            <!-- 步进到哪一步，就给当前span上class：act -->
+		            <span class="lang act"><i>1</i>填写注册信息</span>
+		            <span class="lang "><em class="regsucc-pre">  </em>注册成功</span>
+            	</div>
+            </div>
+            <!--注册-->
+            <div class="reg-form-wrap">
+            	<form >
+            		<div class="reg-form-list">
+            			<dl>
+            				<dd class="top clearfix" id="phone">
+            					<em>手机号</em>
+            					<a href="javascript:" class="ui-select-button">
+									<span class="ui-select-text">中国大陆&nbsp;&nbsp;&nbsp;&nbsp;+86</span>
+									<span class="glyphicon glyphicon-chevron-down" style="float: right;margin-top: 4px;"></span>													
+								</a>
+            					<ul class="ui-select-datalist">
+            						<li class="ui-select-datalist-li  selected" data-index="0">中国大陆&nbsp;&nbsp;&nbsp;&nbsp;+86</li>
+            						<li class="ui-select-datalist-li " data-index="1">香港　　&nbsp;&nbsp;&nbsp;&nbsp;+852</li>
+            						<li class="ui-select-datalist-li " data-index="2">中国澳门&nbsp;&nbsp;&nbsp;&nbsp;+853</li>
+            						<li class="ui-select-datalist-li " data-index="3">台湾　　&nbsp;&nbsp;&nbsp;&nbsp;+886</li>
+            						<li class="ui-select-datalist-li " data-index="4">马来西亚&nbsp;&nbsp;&nbsp;&nbsp;+60</li>
+            						<li class="ui-select-datalist-li " data-index="5">澳大利亚&nbsp;&nbsp;&nbsp;&nbsp;+61</li>
+            						<li class="ui-select-datalist-li " data-index="6">新西兰　&nbsp;&nbsp;&nbsp;&nbsp;+64</li>
+            						<li class="ui-select-datalist-li " data-index="7">新加坡　&nbsp;&nbsp;&nbsp;&nbsp;+65</li>
+            						<li class="ui-select-datalist-li " data-index="8">美国　　&nbsp;&nbsp;&nbsp;&nbsp;+1</li>
+            						<li class="ui-select-datalist-li " data-index="9">阿富汗　&nbsp;&nbsp;&nbsp;&nbsp;+93</li>
+            						<li class="ui-select-datalist-li " data-index="10">阿尔巴尼..&nbsp;&nbsp;+355</li>
+            						<li class="ui-select-datalist-li " data-index="11">阿尔及利..&nbsp;&nbsp;+213</li>
+            						<li class="ui-select-datalist-li " data-index="12">安道尔共..&nbsp;&nbsp;+376</li>
+            						<li class="ui-select-datalist-li " data-index="13">安哥拉　&nbsp;&nbsp;&nbsp;&nbsp;+244</li>
+            						<li class="ui-select-datalist-li " data-index="14">安圭拉岛&nbsp;&nbsp;&nbsp;&nbsp;+1264</li>
+            						<li class="ui-select-datalist-li " data-index="15">安提瓜及..&nbsp;&nbsp;+1268</li>
+            						<li class="ui-select-datalist-li " data-index="16">阿根廷　&nbsp;&nbsp;&nbsp;&nbsp;+54</li>
+            						<li class="ui-select-datalist-li " data-index="17">阿鲁巴　&nbsp;&nbsp;&nbsp;&nbsp;+297</li>
+            						<li class="ui-select-datalist-li " data-index="18">奥地利　&nbsp;&nbsp;&nbsp;&nbsp;+43</li>
+            						<li class="ui-select-datalist-li " data-index="19">阿塞拜疆&nbsp;&nbsp;&nbsp;&nbsp;+994</li>
+            						<li class="ui-select-datalist-li " data-index="20">埃及　　&nbsp;&nbsp;&nbsp;&nbsp;+20</li>
+            						<li class="ui-select-datalist-li " data-index="21">爱沙尼亚&nbsp;&nbsp;&nbsp;&nbsp;+372</li>
+            						<li class="ui-select-datalist-li " data-index="22">埃塞俄比..&nbsp;&nbsp;+251</li>
+            						<li class="ui-select-datalist-li " data-index="23">爱尔兰岛..&nbsp;&nbsp;+353</li>
+            						<li class="ui-select-datalist-li " data-index="24">阿曼　　&nbsp;&nbsp;&nbsp;&nbsp;+968</li>
+            						<li class="ui-select-datalist-li " data-index="25">阿联酋　&nbsp;&nbsp;&nbsp;&nbsp;+971</li>
+            						<li class="ui-select-datalist-li " data-index="26">巴哈马　&nbsp;&nbsp;&nbsp;&nbsp;+1242</li><li class="ui-select-datalist-li " data-index="27">巴林　　&nbsp;&nbsp;&nbsp;&nbsp;+973</li><li class="ui-select-datalist-li " data-index="28">孟加拉共..&nbsp;&nbsp;+880</li><li class="ui-select-datalist-li " data-index="29">巴巴多斯&nbsp;&nbsp;&nbsp;&nbsp;+1246</li><li class="ui-select-datalist-li " data-index="30">白俄罗斯&nbsp;&nbsp;&nbsp;&nbsp;+375</li><li class="ui-select-datalist-li " data-index="31">比利时　&nbsp;&nbsp;&nbsp;&nbsp;+32</li><li class="ui-select-datalist-li " data-index="32">伯利兹　&nbsp;&nbsp;&nbsp;&nbsp;+501</li><li class="ui-select-datalist-li " data-index="33">贝宁　　&nbsp;&nbsp;&nbsp;&nbsp;+229</li><li class="ui-select-datalist-li " data-index="34">百慕大　&nbsp;&nbsp;&nbsp;&nbsp;+1441</li><li class="ui-select-datalist-li " data-index="35">不丹　　&nbsp;&nbsp;&nbsp;&nbsp;+975</li><li class="ui-select-datalist-li " data-index="36">玻利维亚&nbsp;&nbsp;&nbsp;&nbsp;+591</li><li class="ui-select-datalist-li " data-index="37">波斯尼亚..&nbsp;&nbsp;+387</li><li class="ui-select-datalist-li " data-index="38">博茨瓦纳&nbsp;&nbsp;&nbsp;&nbsp;+267</li><li class="ui-select-datalist-li " data-index="39">巴西　　&nbsp;&nbsp;&nbsp;&nbsp;+55</li><li class="ui-select-datalist-li " data-index="40">英属维京..&nbsp;&nbsp;+1284</li><li class="ui-select-datalist-li " data-index="41">保加利亚&nbsp;&nbsp;&nbsp;&nbsp;+359</li><li class="ui-select-datalist-li " data-index="42">布基纳法..&nbsp;&nbsp;+226</li><li class="ui-select-datalist-li " data-index="43">布隆迪　&nbsp;&nbsp;&nbsp;&nbsp;+257</li><li class="ui-select-datalist-li " data-index="44">冰岛　　&nbsp;&nbsp;&nbsp;&nbsp;+354</li><li class="ui-select-datalist-li " data-index="45">巴基斯坦&nbsp;&nbsp;&nbsp;&nbsp;+92</li><li class="ui-select-datalist-li " data-index="46">巴勒斯坦&nbsp;&nbsp;&nbsp;&nbsp;+970</li><li class="ui-select-datalist-li " data-index="47">巴拿马　&nbsp;&nbsp;&nbsp;&nbsp;+507</li><li class="ui-select-datalist-li " data-index="48">巴布亚新..&nbsp;&nbsp;+675</li><li class="ui-select-datalist-li " data-index="49">巴拉圭　&nbsp;&nbsp;&nbsp;&nbsp;+595</li><li class="ui-select-datalist-li " data-index="50">波多黎各&nbsp;&nbsp;&nbsp;&nbsp;+1787</li><li class="ui-select-datalist-li " data-index="51">赤道几内..&nbsp;&nbsp;+240</li><li class="ui-select-datalist-li " data-index="52">朝鲜　　&nbsp;&nbsp;&nbsp;&nbsp;+850</li><li class="ui-select-datalist-li " data-index="53">丹麦　　&nbsp;&nbsp;&nbsp;&nbsp;+45</li><li class="ui-select-datalist-li " data-index="54">多米尼克&nbsp;&nbsp;&nbsp;&nbsp;+1767</li><li class="ui-select-datalist-li " data-index="55">多明尼加..&nbsp;&nbsp;+1809</li><li class="ui-select-datalist-li " data-index="56">东帝汶　&nbsp;&nbsp;&nbsp;&nbsp;+670</li><li class="ui-select-datalist-li " data-index="57">德国　　&nbsp;&nbsp;&nbsp;&nbsp;+49</li><li class="ui-select-datalist-li " data-index="58">多哥　　&nbsp;&nbsp;&nbsp;&nbsp;+228</li><li class="ui-select-datalist-li " data-index="59">厄瓜多尔&nbsp;&nbsp;&nbsp;&nbsp;+593</li><li class="ui-select-datalist-li " data-index="60">俄罗斯　&nbsp;&nbsp;&nbsp;&nbsp;+7</li><li class="ui-select-datalist-li " data-index="61">厄立特里..&nbsp;&nbsp;+291</li><li class="ui-select-datalist-li " data-index="62">佛得角　&nbsp;&nbsp;&nbsp;&nbsp;+238</li><li class="ui-select-datalist-li " data-index="63">法罗群岛&nbsp;&nbsp;&nbsp;&nbsp;+298</li><li class="ui-select-datalist-li " data-index="64">斐济　　&nbsp;&nbsp;&nbsp;&nbsp;+679</li><li class="ui-select-datalist-li " data-index="65">芬兰　　&nbsp;&nbsp;&nbsp;&nbsp;+358</li><li class="ui-select-datalist-li " data-index="66">法国　　&nbsp;&nbsp;&nbsp;&nbsp;+33</li><li class="ui-select-datalist-li " data-index="67">法属圭亚..&nbsp;&nbsp;+594</li><li class="ui-select-datalist-li " data-index="68">法属波利..&nbsp;&nbsp;+689</li><li class="ui-select-datalist-li " data-index="69">法属西印..&nbsp;&nbsp;+809</li><li class="ui-select-datalist-li " data-index="70">菲律宾　&nbsp;&nbsp;&nbsp;&nbsp;+63</li><li class="ui-select-datalist-li " data-index="71">波兰　　&nbsp;&nbsp;&nbsp;&nbsp;+48</li><li class="ui-select-datalist-li " data-index="72">哥伦比亚&nbsp;&nbsp;&nbsp;&nbsp;+57</li><li class="ui-select-datalist-li " data-index="73">刚果　　&nbsp;&nbsp;&nbsp;&nbsp;+242</li><li class="ui-select-datalist-li " data-index="74">刚果民主..&nbsp;&nbsp;+243</li><li class="ui-select-datalist-li " data-index="75">哥斯达黎..&nbsp;&nbsp;+506</li><li class="ui-select-datalist-li " data-index="76">古巴　　&nbsp;&nbsp;&nbsp;&nbsp;+53</li><li class="ui-select-datalist-li " data-index="77">冈比亚　&nbsp;&nbsp;&nbsp;&nbsp;+220</li><li class="ui-select-datalist-li " data-index="78">格鲁吉亚&nbsp;&nbsp;&nbsp;&nbsp;+995</li><li class="ui-select-datalist-li " data-index="79">格陵兰岛&nbsp;&nbsp;&nbsp;&nbsp;+299</li><li class="ui-select-datalist-li " data-index="80">格林纳达&nbsp;&nbsp;&nbsp;&nbsp;+1473</li><li class="ui-select-datalist-li " data-index="81">瓜德罗普..&nbsp;&nbsp;+590</li><li class="ui-select-datalist-li " data-index="82">关岛　　&nbsp;&nbsp;&nbsp;&nbsp;+1671</li><li class="ui-select-datalist-li " data-index="83">格恩西岛&nbsp;&nbsp;&nbsp;&nbsp;+44</li><li class="ui-select-datalist-li " data-index="84">畿尼　　&nbsp;&nbsp;&nbsp;&nbsp;+245</li><li class="ui-select-datalist-li " data-index="85">圭亚那　&nbsp;&nbsp;&nbsp;&nbsp;+592</li><li class="ui-select-datalist-li " data-index="86">海地　　&nbsp;&nbsp;&nbsp;&nbsp;+509</li><li class="ui-select-datalist-li " data-index="87">洪都拉斯&nbsp;&nbsp;&nbsp;&nbsp;+504</li><li class="ui-select-datalist-li " data-index="88">哈萨克斯..&nbsp;&nbsp;+7</li><li class="ui-select-datalist-li " data-index="89">荷兰加勒..&nbsp;&nbsp;+599</li><li class="ui-select-datalist-li " data-index="90">荷兰　　&nbsp;&nbsp;&nbsp;&nbsp;+31</li><li class="ui-select-datalist-li " data-index="91">韩国　　&nbsp;&nbsp;&nbsp;&nbsp;+82</li><li class="ui-select-datalist-li " data-index="92">柬埔寨　&nbsp;&nbsp;&nbsp;&nbsp;+855</li><li class="ui-select-datalist-li " data-index="93">加拿大　&nbsp;&nbsp;&nbsp;&nbsp;+1</li><li class="ui-select-datalist-li " data-index="94">捷克共和..&nbsp;&nbsp;+420</li><li class="ui-select-datalist-li " data-index="95">基里巴斯&nbsp;&nbsp;&nbsp;&nbsp;+686</li><li class="ui-select-datalist-li " data-index="96">吉布提　&nbsp;&nbsp;&nbsp;&nbsp;+253</li><li class="ui-select-datalist-li " data-index="97">加蓬　　&nbsp;&nbsp;&nbsp;&nbsp;+241</li><li class="ui-select-datalist-li " data-index="98">加纳　　&nbsp;&nbsp;&nbsp;&nbsp;+233</li><li class="ui-select-datalist-li " data-index="99">几内亚　&nbsp;&nbsp;&nbsp;&nbsp;+224</li><li class="ui-select-datalist-li " data-index="100">吉尔吉斯..&nbsp;&nbsp;+996</li><li class="ui-select-datalist-li " data-index="101">津巴布韦&nbsp;&nbsp;&nbsp;&nbsp;+263</li><li class="ui-select-datalist-li " data-index="102">喀麦隆　&nbsp;&nbsp;&nbsp;&nbsp;+237</li><li class="ui-select-datalist-li " data-index="103">开曼群岛&nbsp;&nbsp;&nbsp;&nbsp;+1345</li><li class="ui-select-datalist-li " data-index="104">科摩洛　&nbsp;&nbsp;&nbsp;&nbsp;+269</li><li class="ui-select-datalist-li " data-index="105">库克群岛&nbsp;&nbsp;&nbsp;&nbsp;+682</li><li class="ui-select-datalist-li " data-index="106">科特迪瓦..&nbsp;&nbsp;+225</li><li class="ui-select-datalist-li " data-index="107">克罗地亚..&nbsp;&nbsp;+385</li><li class="ui-select-datalist-li " data-index="108">肯尼亚　&nbsp;&nbsp;&nbsp;&nbsp;+254</li><li class="ui-select-datalist-li " data-index="109">科威特　&nbsp;&nbsp;&nbsp;&nbsp;+965</li><li class="ui-select-datalist-li " data-index="110">卡塔尔　&nbsp;&nbsp;&nbsp;&nbsp;+974</li><li class="ui-select-datalist-li " data-index="111">拉脱维亚&nbsp;&nbsp;&nbsp;&nbsp;+371</li><li class="ui-select-datalist-li " data-index="112">莱索托　&nbsp;&nbsp;&nbsp;&nbsp;+266</li><li class="ui-select-datalist-li " data-index="113">利比里亚&nbsp;&nbsp;&nbsp;&nbsp;+231</li><li class="ui-select-datalist-li " data-index="114">利比亚　&nbsp;&nbsp;&nbsp;&nbsp;+218</li><li class="ui-select-datalist-li " data-index="115">列支敦士..&nbsp;&nbsp;+423</li><li class="ui-select-datalist-li " data-index="116">立陶宛　&nbsp;&nbsp;&nbsp;&nbsp;+370</li><li class="ui-select-datalist-li " data-index="117">卢森堡　&nbsp;&nbsp;&nbsp;&nbsp;+352</li><li class="ui-select-datalist-li " data-index="118">留尼汪　&nbsp;&nbsp;&nbsp;&nbsp;+262</li><li class="ui-select-datalist-li " data-index="119">罗马尼亚&nbsp;&nbsp;&nbsp;&nbsp;+40</li><li class="ui-select-datalist-li " data-index="120">卢旺达　&nbsp;&nbsp;&nbsp;&nbsp;+250</li><li class="ui-select-datalist-li " data-index="121">美属萨摩..&nbsp;&nbsp;+1684</li><li class="ui-select-datalist-li " data-index="122">密克罗尼..&nbsp;&nbsp;+691</li><li class="ui-select-datalist-li " data-index="123">马绍尔群..&nbsp;&nbsp;+692</li><li class="ui-select-datalist-li " data-index="124">马尔维纳..&nbsp;&nbsp;+500</li><li class="ui-select-datalist-li " data-index="125">马恩岛　&nbsp;&nbsp;&nbsp;&nbsp;+44</li><li class="ui-select-datalist-li " data-index="126">马其顿　&nbsp;&nbsp;&nbsp;&nbsp;+389</li><li class="ui-select-datalist-li " data-index="127">马达加斯..&nbsp;&nbsp;+261</li><li class="ui-select-datalist-li " data-index="128">马拉维　&nbsp;&nbsp;&nbsp;&nbsp;+265</li><li class="ui-select-datalist-li " data-index="129">马尔代夫&nbsp;&nbsp;&nbsp;&nbsp;+960</li><li class="ui-select-datalist-li " data-index="130">马里　　&nbsp;&nbsp;&nbsp;&nbsp;+223</li><li class="ui-select-datalist-li " data-index="131">马耳他　&nbsp;&nbsp;&nbsp;&nbsp;+356</li><li class="ui-select-datalist-li " data-index="132">马提尼克..&nbsp;&nbsp;+596</li><li class="ui-select-datalist-li " data-index="133">毛里塔尼..&nbsp;&nbsp;+222</li><li class="ui-select-datalist-li " data-index="134">毛里求斯&nbsp;&nbsp;&nbsp;&nbsp;+230</li><li class="ui-select-datalist-li " data-index="135">墨西哥　&nbsp;&nbsp;&nbsp;&nbsp;+52</li><li class="ui-select-datalist-li " data-index="136">摩尔多瓦&nbsp;&nbsp;&nbsp;&nbsp;+373</li><li class="ui-select-datalist-li " data-index="137">摩纳哥公..&nbsp;&nbsp;+377</li><li class="ui-select-datalist-li " data-index="138">蒙古　　&nbsp;&nbsp;&nbsp;&nbsp;+976</li><li class="ui-select-datalist-li " data-index="139">黑山共和..&nbsp;&nbsp;+382</li><li class="ui-select-datalist-li " data-index="140">蒙特塞拉..&nbsp;&nbsp;+1664</li><li class="ui-select-datalist-li " data-index="141">摩洛哥　&nbsp;&nbsp;&nbsp;&nbsp;+212</li><li class="ui-select-datalist-li " data-index="142">莫桑比克&nbsp;&nbsp;&nbsp;&nbsp;+258</li><li class="ui-select-datalist-li " data-index="143">秘鲁　　&nbsp;&nbsp;&nbsp;&nbsp;+51</li><li class="ui-select-datalist-li " data-index="144">老挝　　&nbsp;&nbsp;&nbsp;&nbsp;+856</li><li class="ui-select-datalist-li " data-index="145">黎巴嫩　&nbsp;&nbsp;&nbsp;&nbsp;+961</li><li class="ui-select-datalist-li " data-index="146">纳米比亚&nbsp;&nbsp;&nbsp;&nbsp;+264</li><li class="ui-select-datalist-li " data-index="147">拿鲁岛　&nbsp;&nbsp;&nbsp;&nbsp;+674</li><li class="ui-select-datalist-li " data-index="148">尼泊尔　&nbsp;&nbsp;&nbsp;&nbsp;+977</li><li class="ui-select-datalist-li " data-index="149">尼加拉瓜&nbsp;&nbsp;&nbsp;&nbsp;+505</li><li class="ui-select-datalist-li " data-index="150">尼日尔　&nbsp;&nbsp;&nbsp;&nbsp;+227</li><li class="ui-select-datalist-li " data-index="151">尼日利亚&nbsp;&nbsp;&nbsp;&nbsp;+234</li><li class="ui-select-datalist-li " data-index="152">挪威　　&nbsp;&nbsp;&nbsp;&nbsp;+47</li><li class="ui-select-datalist-li " data-index="153">南非　　&nbsp;&nbsp;&nbsp;&nbsp;+27</li><li class="ui-select-datalist-li " data-index="154">南苏丹　&nbsp;&nbsp;&nbsp;&nbsp;+211</li><li class="ui-select-datalist-li " data-index="155">葡萄牙　&nbsp;&nbsp;&nbsp;&nbsp;+351</li><li class="ui-select-datalist-li " data-index="156">帕劳　　&nbsp;&nbsp;&nbsp;&nbsp;+680</li><li class="ui-select-datalist-li " data-index="157">日本　　&nbsp;&nbsp;&nbsp;&nbsp;+81</li><li class="ui-select-datalist-li " data-index="158">瑞典　　&nbsp;&nbsp;&nbsp;&nbsp;+46</li><li class="ui-select-datalist-li " data-index="159">瑞士　　&nbsp;&nbsp;&nbsp;&nbsp;+41</li><li class="ui-select-datalist-li " data-index="160">塞浦路斯&nbsp;&nbsp;&nbsp;&nbsp;+357</li><li class="ui-select-datalist-li " data-index="161">萨尔瓦多&nbsp;&nbsp;&nbsp;&nbsp;+503</li><li class="ui-select-datalist-li " data-index="162">圣马丁岛&nbsp;&nbsp;&nbsp;&nbsp;+1809</li><li class="ui-select-datalist-li " data-index="163">圣露西亚&nbsp;&nbsp;&nbsp;&nbsp;+1758</li><li class="ui-select-datalist-li " data-index="164">圣文森特..&nbsp;&nbsp;+784</li><li class="ui-select-datalist-li " data-index="165">萨摩亚　&nbsp;&nbsp;&nbsp;&nbsp;+685</li><li class="ui-select-datalist-li " data-index="166">圣马力诺&nbsp;&nbsp;&nbsp;&nbsp;+378</li><li class="ui-select-datalist-li " data-index="167">圣多美和..&nbsp;&nbsp;+239</li><li class="ui-select-datalist-li " data-index="168">沙特阿拉..&nbsp;&nbsp;+966</li><li class="ui-select-datalist-li " data-index="169">塞内加尔&nbsp;&nbsp;&nbsp;&nbsp;+221</li><li class="ui-select-datalist-li " data-index="170">塞尔维亚..&nbsp;&nbsp;+381</li><li class="ui-select-datalist-li " data-index="171">圣彼埃尔..&nbsp;&nbsp;+508</li><li class="ui-select-datalist-li " data-index="172">圣基茨和..&nbsp;&nbsp;+1869</li><li class="ui-select-datalist-li " data-index="173">塞舌尔群..&nbsp;&nbsp;+248</li><li class="ui-select-datalist-li " data-index="174">塞拉利昂&nbsp;&nbsp;&nbsp;&nbsp;+232</li><li class="ui-select-datalist-li " data-index="175">斯洛伐克&nbsp;&nbsp;&nbsp;&nbsp;+421</li><li class="ui-select-datalist-li " data-index="176">斯洛文尼..&nbsp;&nbsp;+386</li><li class="ui-select-datalist-li " data-index="177">所罗门群..&nbsp;&nbsp;+677</li><li class="ui-select-datalist-li " data-index="178">索马里　&nbsp;&nbsp;&nbsp;&nbsp;+252</li><li class="ui-select-datalist-li " data-index="179">斯里兰卡&nbsp;&nbsp;&nbsp;&nbsp;+94</li><li class="ui-select-datalist-li " data-index="180">苏丹　　&nbsp;&nbsp;&nbsp;&nbsp;+249</li><li class="ui-select-datalist-li " data-index="181">苏里南　&nbsp;&nbsp;&nbsp;&nbsp;+597</li><li class="ui-select-datalist-li " data-index="182">史瓦济兰&nbsp;&nbsp;&nbsp;&nbsp;+268</li><li class="ui-select-datalist-li " data-index="183">塔吉克斯..&nbsp;&nbsp;+992</li><li class="ui-select-datalist-li " data-index="184">坦桑尼亚&nbsp;&nbsp;&nbsp;&nbsp;+255</li><li class="ui-select-datalist-li " data-index="185">泰国　　&nbsp;&nbsp;&nbsp;&nbsp;+66</li><li class="ui-select-datalist-li " data-index="186">汤加群岛&nbsp;&nbsp;&nbsp;&nbsp;+676</li><li class="ui-select-datalist-li " data-index="187">特立尼达..&nbsp;&nbsp;+1868</li><li class="ui-select-datalist-li " data-index="188">突尼斯　&nbsp;&nbsp;&nbsp;&nbsp;+216</li><li class="ui-select-datalist-li " data-index="189">土耳其　&nbsp;&nbsp;&nbsp;&nbsp;+90</li><li class="ui-select-datalist-li " data-index="190">土库曼　&nbsp;&nbsp;&nbsp;&nbsp;+993</li><li class="ui-select-datalist-li " data-index="191">特克斯和..&nbsp;&nbsp;+1649</li><li class="ui-select-datalist-li " data-index="192">图瓦卢　&nbsp;&nbsp;&nbsp;&nbsp;+688</li><li class="ui-select-datalist-li " data-index="193">文莱　　&nbsp;&nbsp;&nbsp;&nbsp;+673</li><li class="ui-select-datalist-li " data-index="194">危地马拉&nbsp;&nbsp;&nbsp;&nbsp;+502</li><li class="ui-select-datalist-li " data-index="195">乌干达　&nbsp;&nbsp;&nbsp;&nbsp;+256</li><li class="ui-select-datalist-li " data-index="196">乌克兰　&nbsp;&nbsp;&nbsp;&nbsp;+380</li><li class="ui-select-datalist-li " data-index="197">乌拉圭　&nbsp;&nbsp;&nbsp;&nbsp;+598</li><li class="ui-select-datalist-li " data-index="198">乌兹别克..&nbsp;&nbsp;+998</li><li class="ui-select-datalist-li " data-index="199">瓦努阿图&nbsp;&nbsp;&nbsp;&nbsp;+678</li><li class="ui-select-datalist-li " data-index="200">希腊　　&nbsp;&nbsp;&nbsp;&nbsp;+30</li><li class="ui-select-datalist-li " data-index="201">匈牙利　&nbsp;&nbsp;&nbsp;&nbsp;+36</li><li class="ui-select-datalist-li " data-index="202">新喀里多..&nbsp;&nbsp;+687</li><li class="ui-select-datalist-li " data-index="203">西班牙　&nbsp;&nbsp;&nbsp;&nbsp;+34</li><li class="ui-select-datalist-li " data-index="204">叙利亚　&nbsp;&nbsp;&nbsp;&nbsp;+963</li><li class="ui-select-datalist-li " data-index="205">亚美尼亚&nbsp;&nbsp;&nbsp;&nbsp;+374</li><li class="ui-select-datalist-li " data-index="206">印度　　&nbsp;&nbsp;&nbsp;&nbsp;+91</li><li class="ui-select-datalist-li " data-index="207">印度尼西..&nbsp;&nbsp;+62</li><li class="ui-select-datalist-li " data-index="208">伊朗　　&nbsp;&nbsp;&nbsp;&nbsp;+98</li><li class="ui-select-datalist-li " data-index="209">伊拉克　&nbsp;&nbsp;&nbsp;&nbsp;+964</li><li class="ui-select-datalist-li " data-index="210">以色列　&nbsp;&nbsp;&nbsp;&nbsp;+972</li><li class="ui-select-datalist-li " data-index="211">意大利　&nbsp;&nbsp;&nbsp;&nbsp;+39</li><li class="ui-select-datalist-li " data-index="212">牙买加　&nbsp;&nbsp;&nbsp;&nbsp;+1876</li><li class="ui-select-datalist-li " data-index="213">约旦　　&nbsp;&nbsp;&nbsp;&nbsp;+962</li><li class="ui-select-datalist-li " data-index="214">英国　　&nbsp;&nbsp;&nbsp;&nbsp;+44</li><li class="ui-select-datalist-li " data-index="215">委内瑞拉&nbsp;&nbsp;&nbsp;&nbsp;+58</li><li class="ui-select-datalist-li " data-index="216">越南　　&nbsp;&nbsp;&nbsp;&nbsp;+84</li><li class="ui-select-datalist-li " data-index="217">英属维尔..&nbsp;&nbsp;+1284</li><li class="ui-select-datalist-li " data-index="218">中非共和..&nbsp;&nbsp;+236</li><li class="ui-select-datalist-li " data-index="219">乍得　　&nbsp;&nbsp;&nbsp;&nbsp;+235</li><li class="ui-select-datalist-li " data-index="220">智利　　&nbsp;&nbsp;&nbsp;&nbsp;+56</li><li class="ui-select-datalist-li " data-index="221">直布罗陀&nbsp;&nbsp;&nbsp;&nbsp;+350</li><li class="ui-select-datalist-li " data-index="222">泽西岛　&nbsp;&nbsp;&nbsp;&nbsp;+44</li><li class="ui-select-datalist-li " data-index="223">也门　　&nbsp;&nbsp;&nbsp;&nbsp;+967</li><li class="ui-select-datalist-li " data-index="224">赞比亚　&nbsp;&nbsp;&nbsp;&nbsp;+260</li></ul>
+                                <input type="text" class="input" placeholder="输入手机号码" id="txtphonenumber">
+                            	<i class="icon-error"></i>	
+                            	<p class="error-tip"> </p>
+            				</dd>
+            				
+            				<dd class="clearfix">
+            					<em>验证码</em>
+            					<div class="btnyz" id="TencentCaptcha" data-appid="2069692644" data-cbfn="callback"> </div>	      	
+            				</dd>
+            				<dd class="top clearfix">
+            					<em>短信验证</em>
+            					<input type="text" class="input" placeholder="输入验证码" id="txtphonecode">
+            					<a class="get-code" href="javascript:" >获取验证码</a>
+            					<i class="icon-error"></i>	
+                            	<p class="error-tip"> </p>
+            				</dd>
+            				<dd class="top clearfix">
+            					<em>密码</em>
+            					<input type="password" class="input" id="txtphonepwd" placeholder="6-18位大小写字母、符号或数字">
+            					<div class="psd-tip"> </div>
+            				</dd>
+            				<dd class="top clearfix">
+            					<em>确认密码</em>
+            					<input type="password" class="input" id="txtphonepwd2" placeholder="再次输入密码">
+            					<i class="icon-error"></i>	
+                        		<p class="error-tip"> </p>
+            				</dd>
+            			</dl>
+            			<div class="deal clearfix">
+            				<div class="login-check">我已阅读并同意《用户服务协议》</div>	
+            			</div>
+            			<a href="javascript:" class="btnreg disabled" >立即注册</a>         			
+            		</div>
+            	</form>
+            	<!--注册成功-->
+				<div class="reg-success" style="display: none;">
+					<h3>注册成功</h3>
+					<div class="ok"> </div>
+					<p>你的账号：</p>
+					<h4 class="red"> </h4>
+					<p>90%的书友会设置安全认证，抵御盗号风险</p>
+					<p><a class="blue" href="http://anquan.qidian.com">前往安全中心</a></p>
+					<p><span class="red" id="jumpTime">5</span>秒后跳转</p>
+				</div>
+            </div>
+			
+		</div>
+		<!--页脚-->
+		<div class="footer">
+			<div class="link">
+		        <a href="#">关于起点</a>
+		        <a href="#">联系我们</a>
+		        <a href="#">加入我们</a>
+		        <a href="#">客服中心</a>
+		        <a href="#">提交建议</a>
+		        <a href="#">举报中心</a>
+		    </div>
+		    <p>Copyright (C) 2002-2018 www.qidian.com All Right Reserved版权所有 上海玄霆娱乐信息科技有限公司</p>
+		    <p>上海玄霆娱乐信息科技有限公司 增值电信业务经营许可证沪B2-20080046 沪网文[2012]0068-008 新出网证（沪）字010 沪ICP备08017520号-1</p>
+		    <p>请所有作者发布作品时务必遵守国家互联网信息管理办法规定，我们拒绝任何色情小说，一经发现，即作删除！客服电话：010-59357051</p>
+		    <p>本站所收录作品、社区话题、书库评论及本站所做之广告均属个人行为，与本站立场无关</p>
+		    <div class="safety-box">
+				<div class="safety-img dib-wrap">
+					<a href="#" class="safety-img-01"></a>
+					<a href="#" class="safety-img-02"></a>
+					<a href="#" class="safety-img-03"></a>
+					<a href="#" class="safety-img-04"></a>
+					<a href="#" class="safety-img-05"></a>
+					<a href="#" class="safety-img-06"></a>
+					<a href="#" class="safety-img-07"></a>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
