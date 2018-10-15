@@ -1,0 +1,332 @@
+*{margin: 0px;padding: 0px;}
+ul{list-style-type: none;}
+header{
+	margin-bottom: 32px;
+	height: 99px;
+}
+.box-center{
+	width: 1200px;
+	margin: 0 auto;
+}
+@media (max-width: 1200px){
+.box-center {
+    width: 990px;
+    margin: 0 auto;
+}
+}
+.hd-logo{
+	padding-top: 22px;
+}
+.hd-logo a{
+	display: block;
+	float: left;
+	width: 218px;
+	height: 57px;
+	background: url(../img/zm-img/loginlogo.png) no-repeat;
+}
+.hd-logo em{
+	height: 24px;
+	float: left;
+	margin: 15px 24px 0;
+	border-right: 1px solid #D8D8D8;
+}
+.hd-logo span{
+	font-size: 24px;
+	float: left;
+	margin-top: 15px;
+	font-weight: 400;
+}
+.reg-step{
+	height: 39px;
+    border-bottom: 1px solid #D8D8D8;
+    text-align: center;
+    font-size: 0;
+}
+.reg-step span.act {
+    color: #1A1A1A;
+    border-bottom: 2px solid #ED4259;
+}
+.reg-step span {
+    color: #BFBFBF;
+    padding: 0 30px 10px;
+    font-size: 18px;
+    line-height: 34px;
+    font-weight: 400;
+}
+.reg-step span i {
+    display: inline-block;
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+    margin: -4px 7px 0 0;
+    border-radius: 100%;
+    color: white;
+    font: 16px/24px FZZCYSK;
+    background: #BFBFBF;
+}
+.reg-step span.act i {
+    background: #ED4259;
+}
+.reg-step span .regsucc-pre {
+    display: inline-block;
+    vertical-align: middle;
+    width: 26px;
+    height: 26px;
+    margin: -2px 7px 0 0;
+    min-width: 24px;
+    font-size: 24px;
+    background: url(../img/zm-img/zhuce2.png) no-repeat;
+}
+.reg-form-wrap{
+	padding: 40px 0 60px;
+}
+.reg-form-list{
+	padding-left: 350px;
+}
+.reg-form-list dd{
+	margin-bottom: 32px;
+}
+.reg-form-list dd em{
+	min-width: 60px;
+    font: 14px/44px "PingFangSC-Regular", "-apple-system", Simsun;
+    float: left;
+    margin-right: 24px;
+    text-align: right;
+}
+.top{
+	position: relative;
+}
+.ui-select-button:link,.ui-select-button:visited{
+	float: left;
+	width: 160px;
+	color: #4C5161;
+	text-decoration: none;
+	display: block;
+	line-height: 24px;
+	padding: 9px 9px 9px 13px;
+	border: 1px solid #E6E6E6;
+	background-color: #fff;
+	border-right: none !important;
+}
+.ui-select-button:hover{
+	color: #4C5161;
+	text-decoration: none;
+}
+.active > .ui-select-button{
+	border-radius: 4px 4px 0 0;
+}
+.ui-select-datalist{
+	display: none;
+	width: 160px;
+	max-height: 200px;
+	position: absolute;
+	overflow: auto;
+	top: 42px;
+	left: 84px;
+	border: 1px solid #E6E6E6;
+	background-color: #fff;
+	z-index: 999;
+}
+.ui-select-datalist-li{
+	color: #333;
+	display: block;
+	line-height: 20px;
+	padding: 9px 12px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	cursor: pointer;
+}
+.ui-select-datalist > .selected{
+	background-color: #FFF1F3 !important;
+}
+.input{
+	height: 44px;
+	padding: 0 16px;
+	float: left;
+	border: 1px solid #E6E6E6;
+	outline: none;
+}
+input::-webkit-input-placeholder{
+	color:darkgrey;
+}
+.input-focus::-webkit-input-placeholder{
+	color: #E0E0E0 !important;
+}
+#txtphonenumber{
+	width: 183px;
+}
+.icon-error{
+	display: none;
+	width: 26px;
+	height: 26px;
+	background: url(../img/zm-img/erroricon.png) no-repeat;
+	float: left;
+	margin: 10px 0 0 12px;
+}
+.error-tip{
+	position: absolute;
+	display: none;
+	color: #ED4259;
+	left: 84px;
+    top: 100%;
+    font: 12px/30px "PingFangSC-Regular", "-apple-system", Simsun;
+}
+.btnyz{
+	width: 232px;
+	height: 42px;
+	float: left;
+	cursor: pointer;
+	background: url(../img/zm-img/btnyz.png) no-repeat;
+}
+.btnzy-succ{
+	display: none;
+	width: 232px;
+	height: 42px;
+	float: left;
+	background: url(../img/zm-img/btnyzsuucc.png) no-repeat;
+}
+.btnyzsucc{
+	width: 232px;
+	height: 42px;
+	float: left;
+	background: url(../img/zm-img/btnyzsuucc.png) no-repeat;
+}
+#txtphonepwd,#txtphonepwd2{
+	width: 342px;
+}
+.get-code:link,.get-code:visited{
+	display: block;
+	float: left;
+	width: 116px;
+    height: 42px;
+    color: #262626;
+    text-decoration: none;
+    border: 1px solid #D8D8D8;
+    margin-left: 12px;
+    text-align: center;
+    background: #F7F7F7;
+    font: 14px/42px "PingFangSC-Regular", "-apple-system", Simsun;
+}
+.get-code:hover{
+	text-decoration: none;
+}
+.psd-tip{
+	position: absolute;
+	display: none;
+	top: -6px;
+    left: 436px;
+	width: 157px;
+	height: 90px;
+	background: url(../img/zm-img/psdtip.png) no-repeat;
+}
+.btnreg:link,.btnreg:visited{
+	display: block;
+	border: none;
+	text-decoration: none;
+	color: white;
+	width: 340px;
+	height: 40px;
+	margin: 0 0 30px 84px;
+	background-color: #BF2C24;
+	text-align: center;
+	line-height: 38px;
+	font-size: 16px;
+}
+.btnreg:hover{
+	text-decoration: none;
+	color: white;
+}
+.deal{
+	padding-left: 80px;
+    margin-bottom: 30px;
+}
+.login-check{
+	float: left;	
+	cursor: pointer;	
+	color: #666;
+	padding-left: 20px;
+	background: url(../img/zm-img/lgcheck1.png) no-repeat 0px 1px;
+}
+.login-check-hover{
+	background: url(../img/zm-img/lgcheckhv.png) no-repeat 0px 1px;
+}
+.login-check-act{
+	/*float: left;	
+	cursor: pointer;	
+	color: #666;
+	padding-left: 20px;*/
+	background: url(../img/zm-img/lgcheck.png) no-repeat 0px 1px;
+}
+.disabled{
+    border-color: #A6A6A6 !important;
+    background: #A6A6A6 !important;
+    color: white;
+    cursor: default !important;
+}
+
+
+/*注册成功*/
+.reg-success{
+	text-align: center;
+}
+.ok{
+	width: 74px;
+	height: 69px;
+	margin: 32px auto;
+	background: url(../img/zm-img/zc.png) no-repeat;
+}
+p{
+	margin-bottom: 16px !important;
+    font: 14px/20px "PingFangSC-Regular", "-apple-system", Simsun;
+}
+.red{
+	color: #BF2C24;
+	font-size: 16px;
+	margin-bottom: 32px;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*页脚*/
+.footer{
+	text-align: center;
+	padding-bottom: 20px;
+	background: #FAFAFA;
+}
+.footer p{
+	margin-bottom: 0!important;
+	line-height: 20px;
+	height: 20px;
+	font-size: 12px;
+	color: #A6A6A6;
+	font-family: "PingFangSC-Regular", "-apple-system", Simsun;
+}
+.link{
+	padding-top: 32px;
+	margin-bottom: 10px;
+}
+.link a:link,.link a:visited{
+	color: #666;
+	font-size: 12px;
+	margin-left: 15px;
+	text-decoration: none;	
+}
+.link a:hover{
+	text-decoration: none;	
+	color: #ED4259;
+}
+.safety-box{
+	padding-top: 20px !important;
+}

@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<title>账号登录 </title>
 		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+		<link rel="stylesheet" type="text/css" href="css/header-footer.css"/>
 		<script src="js/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
 		<!--引用bootstrap-->
@@ -21,7 +22,7 @@
 			</div>
 		</header>
 		<!--主内容-->
-		<div class="box-center">
+		<div class="box-center clearfix">
 			<div class="login-main">
 				<!--左边运营图-->
 				<div class="login-lf">
@@ -41,11 +42,12 @@
 					<div class="login-switch">
 						<div class="login-switch-main" >
 							<!--账号登录-->
-							<div class="login-box clearfix">
+							<div class="login-box login-box1 clearfix">
 								<!--账号登录及手机验证码登录-->
 								<div class="web-login">
 									<!--输入登录-->
 									<div class="zh-login">
+										<div class="error-tip">手机号或密码不正确</div>
 										<dl>
 											<dd>
 												<div class="img">
@@ -70,6 +72,7 @@
 									</div>
 									<!--手机验证登录-->
 									<div class="phone-login" style="display: none;">
+										<div class="error-tip"></div>
 										<dl>
 											<dd>
 												<div class="ui-select active ">
@@ -232,7 +235,7 @@
 												<input class="txtphone" type="text" placeholder="手机">
 											</dd>
 											<dd>
-												<input type="text" class="txtcode" placeholder="动态密码">
+												<input type="text" id="txtcode" class="txtcode" placeholder="动态密码">
 												<a class="send-code" href="javascript:">发送动态密码</a>
 											</dd>
 										</dl>
@@ -247,8 +250,8 @@
 									<div class="other-way">
 										<p style="display: none; opacity: 1;">
 											<a href="#"><img id="lg-zfb" src="img/zm-img/zfb.png"/></a>
-											<a href="#" id="lg-wb"><img src="img/zm-img/wb.png"/></a>
-											<a href="#" id="lg-bd"><img src="img/zm-img/bd.png"/></a>
+											<a href="#"><img id="lg-wb" src="img/zm-img/wb.png"/></a>
+											<a href="#"><img id="lg-bd" src="img/zm-img/bd.png"/></a>
 										</p>
 									</div>
 									<!--更多登录方式-->
@@ -262,7 +265,9 @@
 									<div class="qr-code">
 										<img src="img/zm-img/mode.png"/>
 										<p> 打开<a href="#">起点读书客户端</a>扫一扫登录</p>
+										
 									</div>
+									<div class="saoma"> </div>
 								</div>
 								<!--更换为扫码登录或账号登录-->
 								<div class="login-mode-switch scan">
@@ -271,19 +276,55 @@
 							</div>
 							
 							<!--QQ登录-->
-							<div class="login-box">
+							<div class="login-box login-box2 ">
 								<div class="qq-icon">
                             		<span></span>
                         		</div>
                         		<p>您将转跳至指定页面进行登录操作。</p>
+                        		<input type="submit" class="btnlogin" id="" name="" value="前去登录 QQ"/>
 							</div>
 							<!--微信登录-->
+							<div class="login-box login-box3">
+								<div class="wx-code">
+									<img class="wx-img" src="img/zm-img/weixin.png">
+								</div>
+								<div class="wx-info">
+									<p>请使用微信扫描二维码登录</p>
+									<p>“起点中文网”</p>
+								</div>
+							</div>
 						</div>
 						
 					</div>
 				</div>
 					
 				
+			</div>
+		</div>
+		<!--页脚-->
+		<div class="footer">
+			<div class="link">
+		        <a href="#">关于起点</a>
+		        <a href="#">联系我们</a>
+		        <a href="#">加入我们</a>
+		        <a href="#">客服中心</a>
+		        <a href="#">提交建议</a>
+		        <a href="#">举报中心</a>
+		    </div>
+		    <p>Copyright (C) 2002-2018 www.qidian.com All Right Reserved版权所有 上海玄霆娱乐信息科技有限公司</p>
+		    <p>上海玄霆娱乐信息科技有限公司 增值电信业务经营许可证沪B2-20080046 沪网文[2012]0068-008 新出网证（沪）字010 沪ICP备08017520号-1</p>
+		    <p>请所有作者发布作品时务必遵守国家互联网信息管理办法规定，我们拒绝任何色情小说，一经发现，即作删除！客服电话：010-59357051</p>
+		    <p>本站所收录作品、社区话题、书库评论及本站所做之广告均属个人行为，与本站立场无关</p>
+		    <div class="safety-box">
+				<div class="safety-img dib-wrap">
+					<a href="#" class="safety-img-01"></a>
+					<a href="#" class="safety-img-02"></a>
+					<a href="#" class="safety-img-03"></a>
+					<a href="#" class="safety-img-04"></a>
+					<a href="#" class="safety-img-05"></a>
+					<a href="#" class="safety-img-06"></a>
+					<a href="#" class="safety-img-07"></a>
+				</div>
 			</div>
 		</div>
 	</body>
