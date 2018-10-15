@@ -9,12 +9,20 @@ $(function(){
 	})
 	
 	//点击选中状态
-	$(".worksmain_aside_selectlist_per>ul li").click(function(){
+	$(".worksmain_aside_selectlist_per>ul>li").click(function(){
 		$(this).siblings("li").removeClass("selectlist_per_li_selected");
 		$(this).parent("ul").siblings("ul").find("li").removeClass("selectlist_per_li_selected");
 		$(this).addClass("selectlist_per_li_selected");
+		$(".li_down_list ul li").removeClass("selectlist_per_li_selected");
 		
 	})
+	$(".li_down_list_per>ul>li").click(function(){
+		$(this).addClass("selectlist_per_li_selected");
+		$(this).siblings("li").removeClass("selectlist_per_li_selected");
+		$(this).parent().siblings().find("li").removeClass("selectlist_per_li_selected");
+		$(this).parents(".li_down_list").siblings("li").removeClass("selectlist_per_li_selected");
+	})
+	
 	//点击“分类”选中后出现下拉详细分类
 	$(".per_type>ul>.li_moretype").click(function(){
 		var $thisul = $(this).parent("ul");
@@ -39,6 +47,7 @@ $(function(){
 			
 		}else{
 			var title = $(this).find("a").text();
+			
 			var addselect = "<a class='select_type'>"+title+"<i class='close-icon iconfont'>&#xe642;</i></a>";
 			$(".worksmain_aside_selected_item").append(addselect);
 			$(".worksmain_aside_selected_item .all_type").hide();
@@ -64,7 +73,10 @@ $(function(){
 		$(this).parent("li").siblings("li").removeClass("head_select");
 		$(this).parent().siblings("li").find(".s_down").hide();
 		$(this).find(".s_down").show();
-		
+		var text1 = "会员点击";
+		var text2 = "推荐票";
+		$(".worksmain_main_head ul .sort2_type").eq(0).find(".text_replace").text(text1);
+		$(".worksmain_main_head ul .sort2_type").eq(1).find(".text_replace").text(text2);
 	})
 	//后两个
 	$(".worksmain_main_head>ul>.sort2_type>a").click(function(e){
@@ -72,6 +84,7 @@ $(function(){
 		$(this).parent().siblings(".sort2_type").removeClass("dr_head");
 		$(this).siblings(".dr_detail").show();
 		$(this).parent().siblings(".sort2_type").find(".dr_detail").hide();
+		
 		$(document).one("click",function(){
 			$(".dr_detail").hide();
 			$(".sort2_type").removeClass("dr_head");
@@ -91,6 +104,50 @@ $(function(){
 		$(this).parent().hide();
 		$(this).parent().parent().removeClass("dr_head");
 		$(this).parent().parent().siblings("li").find(".s_down").hide();
+		
+		//根据获取的id判定将旁边的文字恢复初始
+		var text1 = "会员点击";
+		var text2 = "推荐票";
+		var test = $(this).parent().parent().attr("id");
+		if(test == "vip_click"){
+			 $("#text_replace").find(".text_replace").text(text2);
+			 var t1 =  $("#ticket_click").find(".text_replace").text(text2);
+		}else{
+			$("#vip_click").find(".text_replace").text(text1);
+		}
+	})
+	
+	//列表模式和图文显示的切换
+	$(".head_right_view .tobooks_multi").click(function(){ //图文显示
+		$(".worksmain_main_books .main_books_multi").show();
+		$(".worksmain_main_books .main_books_list").hide();
+		$(this).addClass("head_right_view_selected");
+		$(this).siblings("a").removeClass("head_right_view_selected");
+	})
+	$(".head_right_view .tobooks_list").click(function(){
+		$(".worksmain_main_books .main_books_list").show();
+		$(".worksmain_main_books .main_books_multi").hide();
+		$(this).addClass("head_right_view_selected");
+		$(this).siblings("a").removeClass("head_right_view_selected");
+	})
+	
+	
+	//底部页标的点击事件
+	$(".worksmain_main_page_list .bottom_page").click(function(){
+		$(this).addClass("page_list_thispage");
+		$(this).parent().siblings("li").find(".bottom_page").removeClass("page_list_thispage");
+		var pagenum = $(this).text();
+		if(pagenum == 1){
+			$(".page_left").addClass("a_disabled");
+			$(".page_right").removeClass("a_disabled");
+		}else if(pagenum == 2399){
+			$(".page_right").addClass("a_disabled");
+			$(".page_left").removeClass("a_disabled");
+		}
+		else{
+			$(".page_left").removeClass("a_disabled");
+			$(".page_right").removeClass("a_disabled");
+		}
 	})
 	
 })
