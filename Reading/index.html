@@ -8,8 +8,80 @@
 		<link rel="stylesheet" href="font/iconfont.css" />
 		<script type="text/javascript" src="bootstrap/js/jquery.min.js" ></script>
 		<script type="text/javascript" src="js/header-footer.js" ></script>
+		<script type="text/javascript" src="js/index.js" ></script>
 	</head>
 	<body>
+		<!--移动导航-->
+		<div id="pin-nav" class="pin-nav-wrap need-searc.h">
+			<div class="box-center cf">
+				<div class="nav-list site-nav fl">
+					<ul>
+						<li class="site">
+							<a class="pin-logo" href="index.html"></a>
+						</li>
+						<li>
+							<a href="#">玄幻</a>
+						</li>
+						<li>
+							<a href="#">都市</a>
+						</li>
+						<li>
+							<a href="#">仙侠</a>
+						</li>
+						<li>
+							<a href="#">科幻</a>
+						</li>
+						<li>
+							<a href="#">游戏</a>
+						</li>
+						<li>
+							<a href="#">历史</a>
+						</li>
+						<li>
+							<a href="#">排行</a>
+						</li>
+						<li class="more">
+							<a href="#">
+								更多<span></span>
+							</a>
+							<div class="dropdown">
+								<a href="allworks.html">全部作品</a>
+								<a href="#">二次元</a>
+								<a href="#">奇幻</a>
+								<a href="#">武侠</a>
+								<a href="#">灵异</a>
+								<a href="#">军事</a>
+								<a href="#">现实</a>
+								<a href="#">体育</a>
+								<a href="#">短篇</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="nav-list min-user fr">
+					<ul>
+						<li id="min-search">
+							<label id="pin-search">
+								<em class="iconfont icon-sousuo"></em>
+							</label>
+							<input type="text" class="pin-input hide" placeholder="重生军工子弟"/>
+						</li>
+						<li class="line"></li>
+						<li class="sign-out">
+							<a id="pin-login" href="login.html">登录</a>
+							<a href="register.html">注册</a>
+						</li>
+						<li class="line"></li>
+						<li class="book-shelf">
+							<a href="#">
+								<em class="iconfont icon-shujia"></em>
+								<i>我的书架</i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 		<!--logo，搜索和书架-->
 		<div class="hf-header box-center load">
 			<div class="cf">
@@ -242,13 +314,39 @@
 			<div class="focus-box fl">
 				<div class="focus-slider">
 					<div class="lbf-slides" id="swithable-slides">
-						
+						<ul>
+							<li id="item1">
+								<a href="#">
+									<img src="img/ljs/swithable-slides-0.jpg" />
+								</a>
+							</li>
+							<li id="item2">
+								<a href="#">
+									<img src="img/ljs/swithable-slides-1.jpg" />
+								</a>
+							</li>
+							<li id="item3">
+								<a href="#">
+									<img src="img/ljs/swithable-slides-2.jpg" />
+								</a>
+							</li>
+							<li id="item4">
+								<a href="#">
+									<img src="img/ljs/swithable-slides-3.jpg" />
+								</a>
+							</li>
+							<li id="item5">
+								<a href="#">
+									<img src="img/ljs/swithable-slides-4.jpg" />
+								</a>
+							</li>
+						</ul>
 						<div class="thumb lbf-button-group">
-							<a href="#" class="lbf-button active">蓝白社</a>
-							<a href="#" class="lbf-button">不可名状的日记簿</a>
-							<a href="#" class="lbf-button">全能师尊</a>
-							<a href="#" class="lbf-button">斩龙</a>
-							<a href="#" class="lbf-button game-link">
+							<a href="#none" class="lbf-button active">蓝白社</a>
+							<a href="#none" class="lbf-button">不可名状的日记簿</a>
+							<a href="#none" class="lbf-button">全能师尊</a>
+							<a href="#none" class="lbf-button">斩龙</a>
+							<a href="#none" class="lbf-button game-link">
 								<em class="iconfont icon-shouyou shouyou"></em>
 								绝世我仙王
 							</a>
@@ -260,8 +358,363 @@
 						</a>
 					</div>
 				</div>
+				<div class="focus-img cf">
+					<ul>
+						<li>
+							<span class="op-tag"></span>
+							<a href="#">
+								<img src="img/ljs/focus_img_com-00.png"/>
+							</a>
+						</li>
+						<li class="focus-img-middle">
+							<span class="op-tag"></span>
+							<a href="#">
+								<img src="img/ljs/focus_img_com-01.png"/>
+							</a>
+						</li>
+						<li>
+							<span class="op-tag"></span>
+							<a href="#">
+								<img src="img/ljs/focus_img_com-02.png"/>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="notice-wrap fr">
+				<div class="notice">
+					<a href="#" class="more">
+						<em class="dib-wrap point">
+							<span></span>
+							<span></span>
+							<span></span>
+						</em>
+						<i></i>
+					</a>
+					<h3>
+						<a href="#">游戏脑洞风暴征文</a>
+					</h3>
+					<div class="notice-list">
+						<ul>
+							<li>
+								<a href="#">
+									<i>「</i>资讯<i>」</i>十月作家高研班开班啦
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i>「</i>资讯<i>」</i>柳下挥新书震撼发布
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i>「</i>活动<i>」</i>王者荣耀新赛季征文
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i>「</i>活动<i>」</i>斗破苍穹声优大乱斗！
+								</a>
+							</li>
+							<li>
+								<a class="red" href="#">
+									<em>页游</em>热血三国
+								</a>
+							</li>
+							<li>
+								<a class="red" href="#">
+									<em>页游</em>太极崛起之战
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="attention">
+						<ul id="wordSlide" class="word_slide">
+							<em class="iconfont icon-laba"></em>
+							<li id="wordList1" style="display: block;">
+								<a href="#">八指琴魔1230订阅了《大唐御医》</a>
+							</li>
+							<li id="wordList2">
+								<a href="#">孙宗义订阅了《太浩》</a>
+							</li>
+							<li id="wordList3">
+								<a href="#">太阳爱冰棒订阅了《我是杀毒软件》</a>
+							</li>
+							<li id="wordList4">
+								<a href="#">放飞的人订阅了《校花的贴身高手》</a>
+							</li>
+							<li id="wordList5">
+								<a href="#">永夜之旅订阅了《美酒供应商》</a>
+							</li>
+							<li id="wordList6">
+								<a href="#">暗夜※繁星订阅了《有扇通往地下城的门》</a>
+							</li>
+							<li id="wordList7">
+								<a href="#">猫修罗订阅了《最强炊事兵》</a>
+							</li>
+							<li id="wordList8">
+								<a href="#">修罗之刻订阅了《特拉福买家俱乐部》</a>
+							</li>
+							<li id="wordList9">
+								<a href="#">？小小？订阅了《超级美食帝国》</a>
+							</li>
+							<li id="wordList10">
+								<a href="#">风月风云订阅了《末世超级商人》</a>
+							</li>
+							<li id="wordList11">
+								<a href="#">svgngj订阅了《重生封神之逆天成圣》</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="notice-banner">
+					<div class="op-tag"></div>
+					<a href="#">
+						<img src="img/ljs/notice-banner-img00.jpg" />
+					</a>
+				</div>
 			</div>
 		</div>
+		<div class="index-two-wrap box-center mb40 cf">
+			<div class="book-list-wrap mr30 fl">
+				<h3 class="wrap-title">
+					本周强推<a href="#" class="more">更多<em class="iconfont icon-arrow-right"></em></a>
+				</h3>
+				<div class="book-list">
+					<ul>
+						<li>
+							<a class="channel" href="#"><em>「</em>历史<em>」</em></a>
+							<strong>
+								<a class="name" href="#">秦农</a>
+							</strong>
+							<a class="author" href="#">玉米粒皮皮</a>
+						</li>
+						<li>
+							<a class="channel" href="#"><em>「</em>仙侠<em>」</em></a>
+							<strong>
+								<a class="name" href="#">抱剑</a>
+							</strong>
+							<a class="author" href="#">梦入秋水</a>
+						</li>
+						<li>
+							<a class="channel" href="#"><em>「</em>都市<em>」</em></a>
+							<strong>
+								<a class="name" href="#">神级黑店</a>
+							</strong>
+							<a class="author" href="#">大佑佑</a>
+						</li>
+						<li>
+							<a class="channel" href="#"><em>「</em>玄幻<em>」</em></a>
+							<strong>
+								<a class="name" href="#">圣临诸天</a>
+							</strong>
+							<a class="author" href="#">大日浴东海</a>
+						</li>
+						<li>
+							<a class="channel" href="#"><em>「</em>玄幻<em>」</em></a>
+							<strong>
+								<a class="name" href="#">绝对虚构</a>
+							</strong>
+							<a class="author" href="#">凿砚</a>
+						</li>
+						<li>
+							<a class="channel" href="#"><em>「</em>奇幻<em>」</em></a>
+							<strong>
+								<a class="name" href="#">神血战士</a>
+							</strong>
+							<a class="author" href="#">银霜骑士</a>
+						</li>
+						<li>
+							<a class="channel" href="#"><em>「</em>都市<em>」</em></a>
+							<strong>
+								<a class="name" href="#">学霸也开挂</a>
+							</strong>
+							<a class="author" href="#">手握寸关尺</a>
+						</li>
+						<li>
+							<a class="channel" href="#"><em>「</em>游戏<em>」</em></a>
+							<strong>
+								<a class="name" href="#">勇者斗魔神</a>
+							</strong>
+							<a class="author" href="#">大烟缸</a>
+						</li>
+						<li>
+							<a class="channel" href="#"><em>「</em>短篇<em>」</em></a>
+							<strong>
+								<a class="name" href="#">哥布林屠夫</a>
+							</strong>
+							<a class="author" href="#">硕鼠就是我</a>
+						</li>
+						<li>
+							<a class="channel" href="#"><em>「</em>科幻<em>」</em></a>
+							<strong>
+								<a class="name" href="#">捡到一个星球</a>
+								<cite class="hot"></cite>
+							</strong>
+							<a class="author" href="#">明渐</a>
+						</li>
+						<li>
+							<a class="channel" href="#"><em>「</em>科幻<em>」</em></a>
+							<strong>
+								<a class="name" href="#">神游诸天虚海</a>
+							</strong>
+							<a class="author" href="#">古月居士</a>
+						</li>
+						<li>
+							<a class="channel" href="#"><em>「</em>都市<em>」</em></a>
+							<strong>
+								<a class="name" href="#">史上最牛道观</a>
+							</strong>
+							<a class="author" href="#">诸羊黄昏</a>
+						</li>
+						<li>
+							<a class="channel" href="#"><em>「</em>历史<em>」</em></a>
+							<strong>
+								<a class="name" href="#">扛着AK闯大明</a>
+							</strong>
+							<a class="author" href="#">行者寒寒</a>
+						</li>
+						<li>
+							<a class="channel" href="#"><em>「</em>仙侠<em>」</em></a>
+							<strong>
+								<a class="name" href="#">洪荒之证道永生</a>
+							</strong>
+							<a class="author" href="#">君主制</a>
+						</li>
+						<li>
+							<a class="channel" href="#"><em>「</em>玄幻<em>」</em></a>
+							<strong>
+								<a class="name" href="#">我能看见战斗力</a>
+								<cite class="hot"></cite>
+							</strong>
+							<a class="author" href="#">臭猪胖乎乎</a>
+						</li>
+						<li class="str3">
+							<a class="channel" href="#"><em>「</em>二次元<em>」</em></a>
+							<strong>
+								<a class="name" href="#">DNF侵入漫威</a>
+							</strong>
+							<a class="author" href="#">海伯伦的君</a>
+						</li>
+						<li>
+							<a class="channel" href="#"><em>「</em>都市<em>」</em></a>
+							<strong>
+								<a class="name" href="#">论妖怪的一万种吃法</a>
+								<cite class="hot"></cite>
+							</strong>
+							<a class="author" href="#">二发凉了</a>
+						</li>
+						<li>
+							<a class="channel" href="#"><em>「</em>页游<em>」</em></a>
+							<strong>
+								<a class="name" href="#">永恒纪元广告</a>							
+							</strong>
+							<span class="author" >广告</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="edit-rec-wrap fl">
+				<h3 class="wrap-title land">
+					编辑推荐
+				</h3>
+				<div class="focus-today cf">
+					<div class="slider-wrap fl">
+						<div id="carousel" class="carousel">
+							<div class="slides">
+								<div class="slideItem item1">
+									<a href="#">
+										<img src="img/ljs/slideItem-img-01.jpg"/>
+									</a>
+								</div>
+								<div class="slideItem item2">
+									<a href="#">
+										<img src="img/ljs/slideItem-img-02.jpg"/>
+									</a>
+								</div>
+								<div class="slideItem item3">
+									<a href="#">
+										<img src="img/ljs/slideItem-img-03.jpg"/>
+									</a>
+								</div>
+								<div class="slideItem item4">
+									<a href="#">
+										<img src="img/ljs/slideItem-img-04.jpg"/>
+									</a>
+								</div>
+								<div class="slideItem item5">
+									<a href="#">
+										<img src="img/ljs/slideItem-img-05.jpg"/>
+									</a>
+								</div>
+								<div class="slideItem item6">
+									<a href="#">
+										<img src="img/ljs/slideItem-img-06.jpg"/>
+									</a>
+								</div>
+								<div class="slideItem item7">
+									<a href="#">
+										<img src="img/ljs/slideItem-img-07.jpg"/>
+									</a>
+								</div>
+							</div>
+							<div class="description">
+								<div class="desc-wrap item1">
+									<h3>
+										<a href="#">我的成就有点多</a>
+									</h3>
+									<p>为了奖励孟凡重生前的义举，宇宙意志奖励了一个系统，并将他送到了三个月前。</p>
+									<a class="read-btn" href="#">书籍详情</a>
+								</div>
+								<div class="desc-wrap item2">
+									<h3>
+										<a href="#">美食供应商</a>
+									</h3>
+									<p>在遥远的东方，存在着一个数次拒绝了米其林三星评价的奇怪小店。</p>
+									<a class="read-btn" href="#">书籍详情</a>
+								</div>
+								<div class="desc-wrap item3">
+									<h3>
+										<a href="#">一卡在手</a>
+									</h3>
+									<p>我知道占尽先机的你们让我一路逆袭，心中肯定非常不爽，我保证这辈子再也不会了！</p>
+									<a class="read-btn" href="#">书籍详情</a>
+								</div>
+								<div class="desc-wrap item4">
+									<h3>
+										<a href="#">怪谈异闻</a>
+									</h3>
+									<p>@怪谈异闻 知名读物博主 接受私信投稿</p>
+									<a class="read-btn" href="#">书籍详情</a>
+								</div>
+								<div class="desc-wrap item5">
+									<h3>
+										<a href="#">变身荒野女主播</a>
+									</h3>
+									<p>变身成为荒野求生女主播，涉足秘境，踏破丛林，吃遍全世界！</p>
+									<a class="read-btn" href="#">书籍详情</a>
+								</div>
+								<div class="desc-wrap item6">
+									<h3>
+										<a href="#">美漫从超人开始</a>
+									</h3>
+									<p>穿越美漫，获得友情系统，从超人身上获得氪星系统，从闪电侠身上获得神速力！</p>
+									<a class="read-btn" href="#">书籍详情</a>
+								</div>
+								<div class="desc-wrap item7">
+									<h3>
+										<a href="#">我修的可能是假仙</a>
+									</h3>
+									<p>嫦娥仙子为何半夜飙歌，七仙女为何夜偷蟠桃，我修的可能是假仙！</p>
+									<a class="read-btn" href="#">书籍详情</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
 		<div class="footer">
 			<div class="box-center cf">
 				<div class="friend-link">
