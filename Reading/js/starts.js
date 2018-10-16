@@ -22,12 +22,35 @@ $(function(){
 		$(this).css("color","#ed4259");
 		$("#mon-ticket").removeClass("color1")
 	})
-	$(".sty").hover(function(){
+	//上下浮动
+	$("#sty1").hover(function(){
 		$(".icon-box>span").css("top","0px");
 	},function(){
 		$(".icon-box>span").css("top","12px");
 	})
+	$("#week").hover(function(){
+		$(".week>span").css("top","0px");
+	},function(){
+		$(".week>span").css("top","18px");
+	})
 	
-	
+	//选项卡切换
+	$("#content li:eq(0)").hover(function(){
+		$("#msg-tab1").show();
+		$("#msg-tab2").hide();
+//		$(#content li:eq(1).css("border-bottom","2px solid #ed4259");
+	})
+	$("#content li:eq(1)").hover(function(){
+//		$(this).css("border-bottom","2px solid #ed4259");
+		$("#msg-tab2").show();
+		$("#msg-tab1").hide();
+	})
+     $("#content li").each(function(){
+		$(this).hover(function(){
+			$(this).css("border-bottom","solid 2px #ed4259");
+		},function(){
+			$(this).css("border-bottom","solid 2px white");
+		})
+	})
 	
 })

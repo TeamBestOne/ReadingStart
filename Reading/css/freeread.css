@@ -234,6 +234,10 @@ header{
 	border-bottom: 2px solid #ed4259;
 	
 }
+.t1 li:nth-of-type(2){
+	border-bottom: 2px solid white;
+	
+}
 .t1 li a:link,.t1 li a:visited{color: gray;text-decoration: none;}
 .t1 li a:hover{color: #ed4259;}
 /*作品信息*/

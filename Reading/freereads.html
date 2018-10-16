@@ -107,13 +107,13 @@
 				  </div>
 				</div>
 			    <div class="detail-tab">
-			    	<ul class="list-inline t1">
-			    		<li><a href="#">作品信息</a></li>
-			    		<li><a href="#">目录（711章）</a></li>
-			    		<li><a href="#">作品讨论（2352条）</a></li>
+			    	<ul id="content" class="list-inline t1">
+			    		<li><a href="javascript:void(null)">作品信息</a></li>
+			    		<li><a href="javascript:void(null)">目录（711章）</a></li>
+			    		<li><a href="javascript:void(null)">作品讨论（2352条）</a></li>
 			    	</ul>
 			    </div>
-			    <div class="msg-tab display">
+			    <div id="msg-tab1" class="msg-tab ">
 			    	<div style="float: left;">
 			    		<div class="goods-msg">
 				    	<p>
@@ -152,7 +152,7 @@
 			        	<ul class="fans clearfix">
 			         	<li id="sty1" class="ticket sty ">
 			         		<h4>
-			         			<span class="color1" id="mon-ticket" style="cursor: pointer;">月票</span>
+			         			<span class="color1"  style="cursor: pointer;">月票</span>
 			         			<em>|</em>
 			         			<span id="invite-ticket" style="cursor: pointer;">推荐票</span>
 			         		</h4>
@@ -170,7 +170,7 @@
 			         		<h4>
 			         			<span class="color1" id="mon-ticket" style="cursor: pointer;">月票</span>
 			         			<em>|</em>
-			         			<span id="invite-ticket" style="cursor: pointer;">推荐票</span>
+			         			<span  style="cursor: pointer;">推荐票</span>
 			         		</h4>
 			         		<p>本周票数</p>
 			         		<p>2360</p>
@@ -181,12 +181,12 @@
                             </div>
                             <a class="mon-btn" href="#"><img src="img/image1/13.jpg"/>投推荐票</a>
 			         	</li>
-			         	<li class="ticket">
+			         	<li class="ticket" id="week">
 			         		<h4 style="color: #ed4259;">打赏</h4>
 			         		<p>本周打赏人数</p>
 			         		<p>4</p>
 			         		<p>今日<span style="color: #ed4259;"> 2 </span>人打赏</p>
-			         		<div class="week">
+			         		<div class="week" >
                                   <span></span>
                                   <b></b>
                             </div>
@@ -573,7 +573,7 @@
 			        </div>
 			    </div>
                 <!--目录-->
-                <div class="msg-tab">
+                <div id="msg-tab2" class="msg-tab display">
 			    	<section>
 			    		<h4 class="head-h">作品相关·共1章 <span>免费</span><span>本卷共41字</span><a class="read" href="#"><img src="img/image1/book-3.jpg"/>分卷阅读</a></h4>
 			    		<a class="chapters" href="#">请假</a>
