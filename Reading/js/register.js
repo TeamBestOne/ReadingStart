@@ -19,7 +19,7 @@ $(function(){
 	})
 })
 
-//验证
+//滑动图片验证成功
 $(function(){
 	var h=$(".btnyz").css("background");
 	if(h=="url(../img/zm-img/btnyz.png) no-repeat"){
