@@ -8,7 +8,7 @@ $(function(){
 
 $(function(){
 	var trigger = null;
-	$("#nav-hover .nav-li-first").hover(function(){
+	$("#nav-hover .nav-li-first,.classify-list").hover(function(){
 		trigger =setTimeout(function(){
 			$("#nav-hover .classify-list").show();
 		},250);	

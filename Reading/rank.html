@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>人气榜单_Reading中文网</title>
+		<link rel="shortcut icon" type="image/x-icon" href="readicon.ico"/>
+		<link rel="stylesheet" type="text/css" href="css/allworks.css"/>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="css/header-footer.css" />
+		<link rel="stylesheet" href="font/iconfont.css" />
+		<script src="bootstrap/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/allworks.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/header-footer.js" ></script>
+	</head>
+	<body>
+		<!--logo，搜索和书架-->
+		<div class="hf-header box-center load">
+			<div class="cf">
+				<div class="logo fl">
+					<a href="index.html"></a>
+				</div>
+				<div class="search-wrap fl">
+					<p>
+						<input class="search-box" placeholder="道君"  />
+					</p>
+					<label class="search-btn">
+						<em class="iconfont icon-sousuo"></em>
+					</label>
+				</div>
+				<div class="book-shelf fr">
+					<a href="login.html">
+						<em class="iconfont icon-shujia"></em>
+						<i>我的书架</i>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!--作品分类，排行和完本等-->
+		<div class="main-nav-wrap load">
+			<div id="nav-hover" class="main-nav box-center cf">		
+				<ul class="cf">
+					<li class="nav-li-first">
+						<b>
+							<strong></strong>
+						</b>
+						<span>
+							<em>
+								<i></i>
+								<i></i>
+								<i></i>
+							</em>
+							作品分类
+						</span>
+					</li>
+					<li class="nav-li">
+						<a href="allworks.html" class="act">全部作品</a>
+					</li>
+					<li class="nav-li">
+						<a href="">排行</a>
+					</li>
+					<li class="nav-li">
+						<a href="finishworks.html">完本</a>
+					</li>
+					<li class="nav-li">
+						<a href="free.html">免费</a>
+					</li>
+					<li class="nav-li" id="app">
+						<a href="none">
+							<b class="iconfont icon-iconphone client"></b>
+							客户端
+						</a>
+						<div id="appqd"></div>		
+					</li>		
+					<li class="reg">
+						<a href="register.html" class="reg-btn">
+							<b class="iconfont icon-zhuce"></b>
+							注册
+						</a>
+					</li>
+					<li class="lgn">
+						<a href="login.html" class="login-btn">
+							<b class="iconfont icon-denglu"></b>
+							登录
+						</a>
+					</li>
+				</ul>
+				<!--隐藏作品分类-->
+				<div class="classify-list fl">
+					<dl>
+						<dd>
+							<a href="#">
+								<cite>
+									<em class="iconfont icon-xuanhuan"></em>
+									<span class="info">
+                                        <i>玄幻</i>
+                                        <b>685074</b>
+                                    </span>
+								</cite>
+							</a>
+						</dd>
+						<dd>
+							<a href="#">
+								<cite>
+									<em class="iconfont icon-qihuan"></em>
+									<span class="info">
+                                        <i>奇幻</i>
+                                        <b>154675</b>
+                                    </span>
+								</cite>
+							</a>
+						</dd>
+						<dd class="even">
+							<a href="#">
+								<cite>
+									<em class="iconfont icon-wuxia"></em>
+									<span class="info">
+                                        <i>武侠</i>
+                                        <b>45375</b>
+                                    </span>
+								</cite>
+							</a>
+						</dd>
+						<dd class="even">
+							<a href="#">
+								<cite>
+									<em class="iconfont icon-xianxia"></em>
+									<span class="info">
+                                        <i>仙侠</i>
+                                        <b>233327</b>
+                                    </span>
+								</cite>
+							</a>
+						</dd>
+						<dd>
+							<a href="#">
+								<cite>
+									<em class="iconfont icon-dushi"></em>
+									<span class="info">
+                                        <i>都市</i>
+                                        <b>367000</b>
+                                    </span>
+								</cite>
+							</a>
+						</dd>
+						<dd>
+							<a href="#">
+								<cite>
+									<em class="iconfont icon-xianshi"></em>
+									<span class="info">
+                                        <i>现实</i>
+                                        <b>14494</b>
+                                    </span>
+								</cite>
+							</a>
+						</dd>
+						<dd class="even">
+							<a href="#">
+								<cite>
+									<em class="iconfont icon-junshi"></em>
+									<span class="info">
+                                        <i>军事</i>
+                                        <b>20547</b>
+                                    </span>
+								</cite>
+							</a>
+						</dd>
+						<dd class="even">
+							<a href="#">
+								<cite>
+									<em class="iconfont icon-lishi"></em>
+									<span class="info">
+                                        <i>历史</i>
+                                        <b>80267</b>
+                                    </span>
+								</cite>
+							</a>
+						</dd>
+						<dd>
+							<a href="#">
+								<cite>
+									<em class="iconfont icon-youxi"></em>
+									<span class="info">
+                                        <i>游戏</i>
+                                        <b>108266</b>
+                                    </span>
+								</cite>
+							</a>
+						</dd>
+						<dd>
+							<a href="#">
+								<cite>
+									<em class="iconfont icon-tiyu"></em>
+									<span class="info">
+                                        <i>体育</i>
+                                        <b>10296</b>
+                                    </span>
+								</cite>
+							</a>
+						</dd>
+						<dd class="even">
+							<a href="#">
+								<cite>
+									<em class="iconfont icon-kehuan"></em>
+									<span class="info">
+                                        <i>科幻</i>
+                                        <b>153754</b>
+                                    </span>
+								</cite>
+							</a>
+						</dd>
+						<dd class="even">
+							<a href="#">
+								<cite>
+									<em class="iconfont icon-lingyi"></em>
+									<span class="info">
+                                        <i>灵异</i>
+                                        <b>65354</b>
+                                    </span>
+								</cite>
+							</a>
+						</dd>
+						<dd>
+							<a href="#">
+								<cite>
+									<em class="iconfont icon-huabian"></em>
+									<span class="info">
+                                        <i>女生网</i>
+                                        <b>713452</b>
+                                    </span>
+								</cite>
+							</a>
+						</dd>
+						<dd>
+							<a href="#">
+								<cite>
+									<em class="iconfont icon-erciyuan"></em>
+									<span class="info">
+                                        <i>二次元</i>
+                                        <b>113163</b>
+                                    </span>
+								</cite>
+							</a>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+		<!--排行页面-->
+		<div class="worksmain">
+			<div class="worksmain_aside pull-left">
+				<div class="ranklist">
+					<ul class="ranklist_top">
+						<li class="rank_act"><a href="">人气榜单</a><i class="iconfont ranktoright">&#xe609;</i></li>
+					</ul>
+					<h4>热门作品排行</h4>
+					<ul class="ranklist_all">
+						<li><a href="">原创风云榜</a><i class="iconfont ranktoright">&#xe609;</i></li>
+						<li><a href="">24小时热销榜</a><i class="iconfont ranktoright">&#xe609;</i></li>
+					</ul>
+				</div>
+			</div>
+			<div class="worksmain_main pull-right">
+				<div class="navbar worksmain_main_head" style="height: 40px;">
+					<ul class="list-unstyled list-inline">
+						<li class="sort1_type head_select"><a>人气排序<i class="s_down iconfont">&#xe6b4;</i></a></li>
+						<li class="sort1_type"><a>更新时间<i class="s_down iconfont display_hidden">&#xe6b4;</i></a></li>
+						<li class="sort1_type"><a>总收藏<i class="s_down iconfont display_hidden">&#xe6b4;</i></a></li>
+						<li class="sort1_type"><a>总字数<i class="s_down iconfont display_hidden">&#xe6b4;</i></a></li>
+						<li class="sort2_type" id="vip_click">
+							<a href="#"><span class="text_replace">会员点击</span><i class="s_down iconfont display_hidden">&#xe6b4;</i><span class="caret"></span></a>
+							<ul class="dr_detail display_hidden">
+								<li><a>会员周点击</a></li>
+								<li><a>会员月点击</a></li>
+								<li><a>会员总点击</a></li>
+							</ul>
+						</li>
+						<li class="sort2_type"  id="ticket_click">
+							<a><span class="text_replace">推荐票</span><i class="s_down iconfont display_hidden">&#xe6b4;</i><span class="caret"></span></a>
+							<ul class="dr_detail display_hidden">
+								<li><a>周推荐票</a></li>
+								<li><a>月推荐票</a></li>
+								<li><a>总推荐票</a></li>
+							</ul>
+						</li>
+							<em style="margin-right: 14px;">|</em>
+						<li class="checkbox-book">
+							<input type="checkbox" id="checkthree"><label for="checkthree">3个月内新书</label>
+						</li>
+						<div class="head_right pull-right">
+							<span>共44865本相关作品</span>
+							<a href="#" data-toggle="tooltip" data-placement="top" title="由于政策和作品原因，部分作品未能显示"><i class="iconfont">&#xe618;</i></a>
+							<em>|</em>
+							<div class="head_right_view">
+								<a class="tobooks_multi head_right_view_selected"><i class="iconfont">&#xe67e;</i></a>
+								<em>|</em>	
+								<a class="tobooks_list"><i class="iconfont">&#xe66d;</i></a>	
+							</div>
+													
+						</div>
+					</ul>
+				</div>
+		
+			</div>
+		</div>
+	</body>
+</html>
