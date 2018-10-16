@@ -161,7 +161,7 @@ $(function(){
 			 	backfaceVisibility: 'hidden',
 			 	transform: 'translateY(0%)'
 			});
-			ImgNow = 0;
+			wordNow = 0;
 		}else{
 			$("#wordList"+wordNext+"").css({
 				display: 'block',
@@ -202,4 +202,31 @@ $(function(){
 	
 	prvtig = setInterval(PrvWord,setTime-2);
 	tigger = setInterval(slideWord,setTime);
+})
+
+/*展开更多*/
+$(function(){
+	var funnum = 1;
+	
+	$("#load-more").click(function(){
+		    var $rlr = $("#rank-list-row");
+		    var $tip = $("#load-more em"); 
+		    var $btnmore = $("#btn-more");
+		    var showTime = 300;
+		    if(funnum == 1){
+		    	$rlr.animate({
+		    		height:"583px"
+		    	},showTime)
+		    	$tip.text("收起更多");
+		    	$btnmore.addClass("up");
+		    	funnum = 2;
+		    }else{
+		    	$rlr.animate({
+		    		height:"423px"
+		    	},showTime)
+		    	$tip.text("展开更多");
+		    	$btnmore.removeClass("up");
+		    	funnum = 1;
+		    }
+	})
 })
