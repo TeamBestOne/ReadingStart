@@ -106,10 +106,11 @@ table {
 .pin-nav-wrap .nav-list li.site a.pin-logo {
     display: block;
     width: 95px;
-    height: 42px;
-    background-image: url(../img/ljs/pin_logo.png);
+    height: 38px;
+    border-top: 2px solid #3e3d43;
+    background-image: url(../readinglogo_white.png);
     background-repeat: no-repeat;
-    background-position: 10px 48%;
+    background-size: cover;
 }
 .pin-nav-wrap .nav-list li.site.act a {
     height: 38px;
@@ -120,6 +121,9 @@ table {
     transition: none;
     border-top: 2px solid #ed4259;
     background: #2b2a2e;
+}
+.pin-nav-wrap .nav-list li.act a.pin-logo{
+	border-top: 2px solid #ed4259;
 }
 .pin-nav-wrap .nav-list li a:hover {
     color: #fff;
