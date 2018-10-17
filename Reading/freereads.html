@@ -6,6 +6,7 @@
 		<title>免费试读</title>
 		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
 		<link rel="stylesheet" type="text/css" href="css/freeread.css"/>
+		<link rel="stylesheet" type="text/css" href="css/header-footer.css"/>
 		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
 		<script src="bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/starts.js" type="text/javascript" charset="utf-8"></script>
@@ -99,7 +100,14 @@
 			    		<span>8.<i>7</i></span>
 			    		<p><span>144</span>人评价</p>
 			    		<p>我要评价</p>
-			    		<img src="img/image1/star1.jpg"/>
+			    		<div class="star">
+			    			<img src="img/image1/star3.png"/>
+				    		<img src="img/image1/star3.png"/>
+				    		<img src="img/image1/star3.png"/>
+				    		<img src="img/image1/star3.png"/>
+				    		<img src="img/image1/star3.png"/>
+			    		</div>
+			    		
 			    		<p><a href="#"><img src="img/image1/book1 (1).jpg"/>订阅</a>
 			    			<a href="#"><img src="img/image1/down.jpg"/>下载</a>
 			    		</p>
@@ -197,40 +205,57 @@
 			         		<h4>我的粉丝等级</h4>
 			         		<h5><img src="img/image1/default_user.38712.png" width="44px"/><a style="margin:0 5px 0 10px;" href="#">登录</a>查看粉丝等级</h5>
 			         		<h4>本书粉丝动态</h4>
-			         		<!--<div class="scroll-div" id="scrollDiv">
-                                 <ul class="list-unstyled fans-slide" style="margin-top: 0px;">
-                                        <li data-rid="2" class="">
-                                                <em class="money"></em><a href="#" target="_blank" data-eid="" title="xxxiu">xxxiu</a><span>打赏</span>100起点币
-                                            </li><li data-rid="3" class="">
-                                                <em class="rec"></em><a href="#" target="_blank" data-eid="" title="书友150421170420082">书友150421170420082</a><span>投了</span>1张推荐票
-                                            </li><li data-rid="4" class="">
-                                                <em class="rec"></em><a href="#" target="_blank" data-eid="" title="时光蝴蝶">时光蝴蝶</a><span>投了</span>5张推荐票
-                                            </li><li data-rid="5" class="">
-                                                <em class="rec"></em><a href="#" target="_blank" data-eid="" title="勇者无惧无畏">勇者无惧无畏</a><span>投了</span>1张推荐票
-                                            </li><li data-rid="6" class="">
-                                                <em class="month"></em><a href="#" target="_blank" data-eid="" title="天捷">天捷</a><span>投了</span>2张月票
-                                            </li><li data-rid="7" class="">
-                                                <em class="rec"></em><a href="#" target="_blank" data-eid="" title="专gang99楼">专gang99楼</a><span>投了</span>3张推荐票
-                                            </li><li data-rid="8" class="">
-                                                <em class="rec"></em><a href="#" target="_blank" data-eid="" title="一纸牵绊丶与谁书">一纸牵绊丶与谁书</a><span>投了</span>4张推荐票
-                                            </li><li data-rid="9" class="">
-                                                <em class="month"></em><a href="#" target="_blank" data-eid="" title="顾语十年春秋">顾语十年春秋</a><span>投了</span>1张月票
-                                            </li><li data-rid="10" class="">
-                                                <em class="month"></em><a href="#" target="_blank" data-eid="" title="黑兹妮戈玛女王">黑兹妮戈玛女王</a><span>投了</span>2张月票
-                                            </li><li data-rid="11" class="">
+			         		<div class="scroll-div" id="scrollDiv">
+                                 <ul id="fans-line" class="list-unstyled fans-slide clearfix" style="margin-top: 0px;">
+                                            <li>
                                                 <em class="month"></em><a href="#" target="_blank" data-eid="" title="Emiya卫宫">Emiya卫宫</a><span>投了</span>1张月票
-                                            </li><li data-rid="12" class="">
+                                            </li>
+                                           <li>
+                                                <em class="money"></em>
+                                                <a href="#" target="_blank" data-eid="" title="xxxiu">xxxiu</a><span>打赏</span>100起点币
+                                                
+                                            </li>
+                                            <li>
+                                                <em class="rec"></em><a href="#" target="_blank" data-eid="" title="书友150421170420082">书友150421170420082</a><span>投了</span>1张推荐票
+                                            </li>
+                                            <li>
+                                                <em class="rec"></em><a href="#" target="_blank" data-eid="" title="时光蝴蝶">时光蝴蝶</a><span>投了</span>5张推荐票
+                                            </li>
+                                            <li>
+                                                <em class="rec"></em><a href="#" target="_blank" data-eid="" title="勇者无惧无畏">勇者无惧无畏</a><span>投了</span>1张推荐票
+                                            </li>
+                                           <li>
+                                                <em class="month"></em><a href="#" target="_blank" data-eid="" title="天捷">天捷</a><span>投了</span>2张月票
+                                            </li>
+                                            <li>
+                                                <em class="rec"></em><a href="#" target="_blank" data-eid="" title="专gang99楼">专gang99楼</a><span>投了</span>3张推荐票
+                                            </li>
+                                            <li>
+                                                <em class="rec"></em><a href="#" target="_blank" data-eid="" title="一纸牵绊丶与谁书">一纸牵绊丶与谁书</a><span>投了</span>4张推荐票
+                                            </li>
+                                           <li>
+                                                <em class="month"></em><a href="#" target="_blank" data-eid="" title="顾语十年春秋">顾语十年春秋</a><span>投了</span>1张月票
+                                            </li>
+                                           <li>
+                                                <em class="month"></em><a href="#" target="_blank" data-eid="" title="黑兹妮戈玛女王">黑兹妮戈玛女王</a><span>投了</span>2张月票
+                                           </li>
+                                            <li>
                                                 <em class="month"></em><a href="#" target="_blank" data-eid="" title="AlexXi">AlexXi</a><span>投了</span>2张月票
-                                            </li><li data-rid="13" class="">
+                                            </li>
+                                           <li>
                                                 <em class="money"></em><a href="#" target="_blank" data-eid="" title="书友150910193629262">书友150910193629262</a><span>打赏</span>100起点币
-                                            </li><li data-rid="14" class="">
+                                            </li>
+                                            <li>
                                                 <em class="money"></em><a href="#" target="_blank" data-eid="" title="南紅悅">南紅悅</a><span>打赏</span>100起点币
-                                            </li><li data-rid="15" class="">
+                                            </li>
+                                            <li>
                                                 <em class="money"></em><a href="#" target="_blank" data-eid="" title="xxxiu">xxxiu</a><span>打赏</span>100起点币
-                                            </li><li data-rid="1" class="">
+                                            </li>
+                                            <li>
                                                 <em class="money"></em><a href="#" target="_blank" data-eid="" title="天捷">天捷</a><span>打赏</span>100起点币
-                                            </li></ul>
-                            </div>-->
+                                            </li>
+                                 </ul>
+                            </div>
 			         	</li>
 			         </ul>
 			    	    <div class="small-adver">
@@ -650,7 +675,7 @@
 			    	</section>
 			        <section class="catalogue">
 			    		<h4 class="head-h span2">作品相关·共592章 <span>VIP</span><span>本卷共1308187字</span><a class="read" href="#" style="margin-left: 571px;"><img src="img/image1/book-3.jpg"/>分卷阅读</a></h4>
-			    		<table border="0" cellspacing="0" cellpadding="0">
+			    		<table class="table2" border="0" cellspacing="0" cellpadding="0">
 			    			<tr>
 			    				<td><a href="#">第三十九章&nbsp;&nbsp;巫祝</a></td>
 			    				<td><a href="#">第四十章&nbsp;&nbsp;巫祝</a></td>
@@ -729,6 +754,49 @@
 			   
 			</div>
 		</div>
-		
+		<div style="clear: both;"></div>
+        <div class="footer">
+			<div class="box-center cf">
+				<div class="friend-link">
+		            <em>
+		            	<a class="yuewen" href="#">阅文集团</a><cite>旗下网站：</cite>
+		            </em>
+	                <a href="index.html">起点中文网</a>
+	                <a href="#">起点女生网</a>
+	                <a href="#">创世中文网</a>
+	                <a href="#">云起书院</a>         
+	                <a href="#">红袖添香</a>
+	                <a href="#">小说阅读网</a>
+	                <a href="#">言情小说吧</a>
+	                <a href="#">潇湘书院</a>
+	                <a href="#">天方听书网</a>
+	                <a href="#">懒人听书</a>
+	                <a href="#">阅文悦读</a>
+	                <a href="#">QQ阅读</a>
+	                <a href="#">起点读书</a>
+	                <a href="#">作家助手</a>
+	                <a href="#">起点国际版</a>
+		        </div>
+		        <div class="footer-menu dib-wrap">
+		            <a href="#">关于起点</a>
+		            <a href="#">联系我们</a>
+		            <a href="#">加入我们</a>
+		            <a href="#">帮助中心</a>
+		            <a href="#">提交建议</a>        
+		            <a href="#">举报中心</a>
+		        </div>
+				<div class="copy-right">
+	            <p><span>Copyright © 2002-2018 www.qidian.com All Rights Reserved</span>版权所有 上海玄霆娱乐信息科技有限公司</p>
+	            <p>上海玄霆娱乐信息科技有限公司
+	                <a href="#" style="color:#666;margin-left: 5px">增值电信业务经营许可证沪B2-20080046</a>
+	          		出版经营许可证 新出发沪批字第U3718号 沪网文[2015]0081-031 新出网证（沪）字010
+	                <a href="#" style="color:#666;margin-left: 5px">沪ICP备08017520号-1</a>
+	            </p>
+	            <p>请所有作者发布作品时务必遵守国家互联网信息管理办法规定，我们拒绝任何色情小说，一经发现，即作删除！举报电话：010-59357051</p>
+	            <p>本站所收录的作品、社区话题、用户评论、用户上传内容或图片等均属用户个人行为。如前述内容侵害您的权益，欢迎举报投诉，一经核实，立即删除，本站不承担任何责任</p>
+	            <p>联系方式 总机 021-61870500 地址：中国（上海）自由贸易试验区碧波路690号6号楼101、201室</p>
+	        </div>
+			</div>
+		</div>
 	</body>
 </html>
