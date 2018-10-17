@@ -206,8 +206,7 @@ $(function(){
 
 /*展开更多*/
 $(function(){
-	var funnum = 1;
-	
+	var funnum = 1;	
 	$("#load-more").click(function(){
 		    var $rlr = $("#rank-list-row");
 		    var $tip = $("#load-more em"); 
@@ -228,5 +227,22 @@ $(function(){
 		    	$btnmore.removeClass("up");
 		    	funnum = 1;
 		    }
+	})
+})
+
+/*全部,免费 ,VIP */
+$(function(){
+	var $updateTab = $("#update-tab");
+	var $updateList = $("#update-list");
+	$("#update-tab > a").click(function(){
+		var $num = $(this).index();
+		$(this).addClass("act").siblings().removeClass("act");
+		if($num == 0){
+			$updateList.children(".update-table.all").show().siblings().hide();			
+		}else if($num == 2){
+			$updateList.children(".update-table.free").show().siblings().hide();
+		}else if($num == 4){
+			$updateList.children(".update-table.vip").show().siblings().hide();
+		}
 	})
 })
