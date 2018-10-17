@@ -184,3 +184,14 @@ $(function(){
 		}
 	})
 })
+//登陆管理界面
+$(function(){
+	$(".btnlogin").click(function(){
+		var username=$("#username").val();
+		var psd=$("#password").val();
+		if(username=="admin" && psd =="123"){
+			window.location.replace("wms-index.html");
+		}
+	})
+	
+})

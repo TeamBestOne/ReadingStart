@@ -69,7 +69,7 @@
 								<li><a href="#"><i class="lnr lnr-user"></i> <span>我的账户</span></a></li>
 								<li><a href="#"><i class="lnr lnr-envelope"></i> <span>信息</span></a></li>
 								<li><a href="#"><i class="lnr lnr-cog"></i> <span>设置</span></a></li>
-								<li><a href="#"><i class="lnr lnr-exit"></i> <span>登出</span></a></li>
+								<li><a href="login.html"><i class="lnr lnr-exit"></i> <span>登出</span></a></li>
 							</ul>
 						</li>
 					</ul>
@@ -82,24 +82,24 @@
 				<div class="sidebar-scroll" style="overflow: auto; width: auto; height: 95%;">
 					<nav>
 						<ul class="nav">
-							<li><a href="wms-index.html" class="active"><i class="lnr lnr-home"></i> <span>Dashboard</span></a></li>
-							<li><a href="#" class=""><i class="lnr lnr-code"></i> <span>Elements</span></a></li>
-							<li><a href="#" class=""><i class="lnr lnr-chart-bars"></i> <span>Charts</span></a></li>
-							<li><a href="#" class=""><i class="lnr lnr-cog"></i> <span>Panels</span></a></li>
-							<li><a href="#" class=""><i class="lnr lnr-alarm"></i> <span>Notifications</span></a></li>
+							<li><a href="wms-index.html" class="active"><i class="lnr lnr-home"></i> <span>主页</span></a></li>
 							<li>
-								<a href="#subPages" data-toggle="collapse" class="collapsed"><i class="lnr lnr-file-empty"></i> <span>Pages</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+								<a href="#subPages" data-toggle="collapse" class="collapsed"><i class="lnr lnr-file-empty"></i> <span>所有图书信息</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
 								<div id="subPages" class="collapse ">
 									<ul class="nav">
-										<li><a href="#" class="">Profile</a></li>
-										<li><a href="#" class="">Login</a></li>
-										<li><a href="#" class="">Lockscreen</a></li>
+										<li><a href="wms-book.html" class="">查找图书</a></li>
+										<li><a href="wms-addbook.html" class="">添加图书</a></li>
+										<li><a href="wms-edit.html" class="">编辑图书</a></li>
 									</ul>
 								</div>
 							</li>
-							<li><a href="#" class=""><i class="lnr lnr-dice"></i> <span>Tables</span></a></li>
+							<li><a href="wms-autor.html" class=""><i class="lnr lnr-users"></i> <span>作家管理</span></a></li>
+							<li><a href="wms-users.html" class=""><i class="lnr lnr-license"></i> <span>用户管理</span></a></li>
+							<!--<li><a href="#" class=""><i class="lnr lnr-alarm"></i> <span>订单管理</span></a></li>-->
+							
+							<!--<li><a href="#" class=""><i class="lnr lnr-dice"></i> <span>Tables</span></a></li>
 							<li><a href="#" class=""><i class="lnr lnr-text-format"></i> <span>Typography</span></a></li>
-							<li><a href="#" class=""><i class="lnr lnr-linearicons"></i> <span>Icons</span></a></li>
+							<li><a href="#" class=""><i class="lnr lnr-linearicons"></i> <span>Icons</span></a></li>-->
 						</ul>
 					</nav>
 				</div>				
@@ -121,8 +121,8 @@
 									<div class="metric clearfix">
 										<span class="icon"><i class="fa fa-download"></i></span>
 										<p>
-											<span class="number"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1,252 </font></font></span>
-											<span class="title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下载</font></font></span>
+											<span class="number"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">21,252 </font></font></span>
+											<span class="title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下载量</font></font></span>
 										</p>
 									</div>
 								</div>
@@ -131,7 +131,7 @@
 										<span class="icon"><i class="fa fa-shopping-bag"></i></span>
 										<p>
 											<span class="number"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">203 </font></font></span>
-											<span class="title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">销售</font></font></span>
+											<span class="title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">订单量</font></font></span>
 										</p>
 									</div>
 								</div>
@@ -140,7 +140,7 @@
 										<span class="icon"><i class="fa fa-eye"></i></span>
 										<p>
 											<span class="number"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">274,678次</font></font></span>
-											<span class="title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">访问</font></font></span>
+											<span class="title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">访问量</font></font></span>
 										</p>
 									</div>
 								</div>
@@ -226,7 +226,18 @@
 									</div>
 								</div>
 								<div class="col-md-3">
-									
+									<div class="weekly-summary text-right">
+										<span class="number">12,315</span> <span class="percentage"><i class="fa fa-caret-up text-success"></i> 12%</span>
+										<span class="info-label">总访问量</span>
+									</div>
+									<div class="weekly-summary text-right">
+										<span class="number">25,758</span> <span class="percentage"><i class="fa fa-caret-up text-success"></i> 23%</span>
+										<span class="info-label">总下载量</span>
+									</div>
+									<div class="weekly-summary text-right">
+										<span class="number">$65,938</span> <span class="percentage"><i class="fa fa-caret-down text-danger"></i> 8%</span>
+										<span class="info-label">总收入</span>
+									</div>
 								</div>
 							</div>
 						</div>

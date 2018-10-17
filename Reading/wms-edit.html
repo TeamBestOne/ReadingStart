@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>后台管理 | 编辑图书</title>
+		<link rel="stylesheet" type="text/css" href="css/wms-index.css"/>
+		<script src="js/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/wms-index.js" type="text/javascript" charset="utf-8"></script>			
+		<!--引用icon-->
+		<link rel="stylesheet" type="text/css" href="linearicons/style.css"/>
+		<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css"/>
+		<!--引入bootstrap-->
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
+		<script src="bootstrap/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="bootstrap/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<!--引入vue.js-->
+		<script src="js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<!--logo-->
+			<div class="brand ">
+				<a href="index.html">
+					<img src="img/zm-img/logo-small.png"/>
+				</a>
+			</div>
+			<!--除logo以外的东西-->
+			<div class="container-fluid">
+				<div class="navbar-btn">
+					<button type="button" id="btn-sidebar">
+						<i class="lnr lnr-arrow-left-circle"></i>
+					</button>
+				</div>
+				<!--搜索-->
+				<form class="navbar-form navbar-left">
+					<div class="input-group">
+						<input type="text" value="" class="form-control" placeholder="Search...">
+						<span class="input-group-btn"><button type="button" class="btn btn-primary">搜索</button></span>
+					</div>
+				</form>
+				<!--右边选项-->
+				<div id="navbar-menu">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle icon-menu" data-toggle="dropdown" aria-expanded="false">
+								<i class="lnr lnr-alarm"></i>
+								<span class="badge bg-danger">5</span>
+							</a>
+							<ul class="dropdown-menu navbar-new">
+								<li><a href="#"><span class="dot bg-warning"></span>系统空间几乎满了</a></li>
+								<li><a href="#"><span class="dot bg-danger"></span>你有9个未完成的任务</a></li>
+								<li><a href="#"><span class="dot bg-success"></span>每月可用报告</a></li>
+								<li><a href="#"><span class="dot bg-warning"></span>每周会议</a></li>
+								<li><a href="#"><span class="dot bg-success"></span>您的请求已获批准</a></li>
+								<li><a href="#" class="more">查看所有通知</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="lnr lnr-question-circle"></i> <span>帮助中心</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">基本用法</a></li>
+								<li><a href="#">使用数据</a></li>
+								<li><a href="#">安全</a></li>
+								<li><a href="#">故障排除</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><img src="img/zm-img/user.png" alt="Avatar"> <span>Admin</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
+							<ul class="dropdown-menu">
+								<li><a href="#"><i class="lnr lnr-user"></i> <span>我的账户</span></a></li>
+								<li><a href="#"><i class="lnr lnr-envelope"></i> <span>信息</span></a></li>
+								<li><a href="#"><i class="lnr lnr-cog"></i> <span>设置</span></a></li>
+								<li><a href="login.html"><i class="lnr lnr-exit"></i> <span>登出</span></a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!--侧边导航-->
+		<div id="sidebar-nav" class="sidebar" >
+			<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 95%;">
+				<div class="sidebar-scroll" style="overflow: auto; width: auto; height: 95%;">
+					<nav>
+						<ul class="nav">
+							<li><a href="wms-index.html" ><i class="lnr lnr-home"></i> <span>主页</span></a></li>
+							<li>
+								<a href="#subPages" data-toggle="collapse" class="collapsed active"><i class="lnr lnr-file-empty"></i> <span>所有图书信息</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+								<div id="subPages" class="collapse ">
+									<ul class="nav">
+										<li><a href="wms-book.html" class="">查找图书</a></li>
+										<li><a href="wms-addbook.html" class="">添加图书</a></li>
+										<li><a href="wms-edit.html" class="">编辑图书</a></li>
+									</ul>
+								</div>
+							</li>
+							<li><a href="#" class=""><i class="lnr lnr-users"></i> <span>作家管理</span></a></li>
+							<li><a href="#" class=""><i class="lnr lnr-license"></i> <span>用户管理</span></a></li>
+							<!--<li><a href="#" class=""><i class="lnr lnr-alarm"></i> <span>订单管理</span></a></li>-->
+							
+							<!--<li><a href="#" class=""><i class="lnr lnr-dice"></i> <span>Tables</span></a></li>
+							<li><a href="#" class=""><i class="lnr lnr-text-format"></i> <span>Typography</span></a></li>
+							<li><a href="#" class=""><i class="lnr lnr-linearicons"></i> <span>Icons</span></a></li>-->
+						</ul>
+					</nav>
+				</div>				
+			</div>
+			
+		</div>
+		<!--主内容-->
+		<div class="main">
+			<div class="main-content">
+				<div class="container-fluid">
+					<div class="panel panel-heading">
+						<div class="panel-heading">
+							<h3 class="panel-title">编辑图书</h3>
+						</div>
+						<div class="panel-body" style="position: relative;">
+							<p class="form-inline">
+								书名: <input type="text" class="form-control">
+							</p>
+							<p class="form-inline">
+								作者: <input type="text" class="form-control">
+							</p>
+							<div class="h">
+								类型:
+			                	<div class="btn-group">
+			                		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								    	请选择 <span class="caret"></span>
+								  	</button>
+								  	<ul class="dropdown-menu ul-type">
+								  		<li><a href="#">玄幻</a></li>
+									    <li><a href="#">奇幻</a></li>
+									    <li><a href="#">武侠</a></li>
+									    <li><a href="#">仙侠</a></li>
+									    <li><a href="#">都市</a></li>
+									    <li><a href="#">现实</a></li>
+									    <li><a href="#">军事</a></li>
+									    <li><a href="#">历史</a></li>
+									    <li><a href="#">游戏</a></li>
+									    <li><a href="#">体育</a></li>
+									    <li><a href="#">科幻</a></li>
+									    <li><a href="#">灵异</a></li>
+									    <li><a href="#">女生网</a></li>
+									    <li><a href="#">二次元</a></li>
+								  	</ul>
+								</div>
+								状态:
+			                	<div class="btn-group">
+			                		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								    	请选择 <span class="caret"></span>
+								  	</button>
+								  	<ul class="dropdown-menu">
+								  		<li><a href="#">全部</a></li>
+									    <li><a href="#">连载</a></li>
+									    <li><a href="#">完本</a></li>
+								  	</ul>
+								</div>
+								属性:
+			                	<div class="btn-group">
+			                		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								    	请选择 <span class="caret"></span>
+								  	</button>
+								  	<ul class="dropdown-menu">
+								  		<li><a href="#">全部</a></li>
+									    <li><a href="#">免费</a></li>
+									    <li><a href="#">VIP</a></li>
+								  	</ul>
+								</div>
+								品质:
+			                	<div class="btn-group">
+			                		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								    	请选择 <span class="caret"></span>
+								  	</button>
+								  	<ul class="dropdown-menu">
+								  		<li><a href="#">全部</a></li>
+									    <li><a href="#">签约作品</a></li>
+									    <li><a href="#">精品小说</a></li>
+								  	</ul>
+								</div>
+							</div>						
+			                <div class="h">
+			                	<button class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> 增加章节</button><br />
+			                	<div class="add-section form-inline">
+			                		<p>标题： <input type="text" class="form-control"/></p>
+			                		<p>内容： <textarea  rows="5" cols="60" class="form-control"></textarea></p>
+			                	</div>
+			                	
+			                </div>
+							<div class="form-group h">
+			                	封面： <input type="file" id="btnimg" onclick="imgChange()">
+							</div>							
+							<br />
+							<input type="button" class="btn btn-primary " value="确认">
+				            <input type="button" class="btn btn-default " value="还原">
+							<div class="book-img">
+								<img id="image" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>

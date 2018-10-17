@@ -410,3 +410,26 @@ input::-webkit-input-placeholder{
 	background: #FFE4E8;
 	color: #ED4259;
 }
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+.sidebar-scroll::-webkit-scrollbar
+{
+    width: 7px;
+    height: 7px;
+    background-color: #DDDDDD;
+}
+ 
+/*定义滚动条轨道 内阴影+圆角*/
+.sidebar-scroll::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 7px;
+    background-color: #AAAAAA;
+}
+ 
+/*定义滑块 内阴影+圆角*/
+.sidebar-scroll::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #DDDDDD;
+}
