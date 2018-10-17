@@ -8,8 +8,12 @@ $(function(){
 
 $(function(){
 	var trigger = null;
+<<<<<<< HEAD
 	var hidertig = null;
 	$("#nav-hover .nav-li-first").hover(function(){
+=======
+	$("#nav-hover .nav-li-first,.classify-list").hover(function(){
+>>>>>>> branch 'master' of https://github.com/TeamBestOne/ReadingStart.git
 		trigger =setTimeout(function(){
 			$("#nav-hover .classify-list").show();
 		},250);	
