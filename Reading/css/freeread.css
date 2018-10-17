@@ -634,12 +634,19 @@ tr a:hover{color: #ed4259;}
 	    margin: 0 auto;
 	    padding-top: 20px;
 }
+
+/*内容左边布局*/
 .main-wrap-fl{
 	float: left;
 	width: 700px;
 	
 }
-/*内容左边布局*/
+/*内容右边布局*/
+.main-wrap-fr{
+	float: left;
+	width: 700px;
+	
+}
 /*下拉菜单1*/
 .menu1{
 	position: absolute;
