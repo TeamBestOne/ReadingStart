@@ -151,3 +151,45 @@ $(function(){
 	})
 	
 })
+
+//free页面
+$(function(){
+	//	fremainhead的选择
+	$(".fremainhead ul li").click(function(){
+		$(this).addClass("fremainhead_selected");
+		$(this).siblings("li").removeClass("fremainhead_selected");
+		var indexS = $(".fremainhead ul li").index(this);
+		if(indexS == 0){
+			$(this).parents(".fremainhead").siblings(".worksmain").hide();
+			$(this).parents(".fremainhead").siblings(".fremaintime").show();
+		}else if(indexS == 1){
+			$(this).parents(".fremainhead").siblings(".fremaintime").hide();
+			$(this).parents(".fremainhead").siblings(".worksmain").show();
+		}
+	})
+	
+	//限时免费倒计时
+	var day = parseInt($(".fremaintime_banner_cd .cd_day").text());
+	var hour = parseInt($(".fremaintime_banner_cd .cd_hour").text());
+	var min = parseInt($(".fremaintime_banner_cd .cd_min").text());
+	var sec = parseInt($(".fremaintime_banner_cd .cd_sec").text());
+	var startTime = day*24*60*60+hour*60*60+min*60+sec;
+	var day1 = 0;
+	var hour1 = 0;
+	var min1 = 0;
+	setInterval(cdTime,1000);
+	function cdTime(){
+		if(startTime > 0){
+			startTime--;
+			day = Math.floor(startTime/(60*60*24));
+			hour = Math.floor((startTime/(60*60)))-(day*24);
+			min = Math.floor(startTime/(60)) - (day*24*60) - (hour*60);
+			sec = Math.floor(startTime)-(day*24*60*60) - (hour*60*60) - (min*60);
+			$(".fremaintime_banner_cd .cd_day").text(day);
+			$(".fremaintime_banner_cd .cd_hour").text(hour);
+			$(".fremaintime_banner_cd .cd_min").text(min);
+			$(".fremaintime_banner_cd .cd_sec").text(sec);
+			console.log(startTime +"-"+day +"-"+ hour +"-"+ min +"-"+ sec);
+		}
+	}
+})

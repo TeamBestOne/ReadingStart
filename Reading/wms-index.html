@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>后台管理 | 首页</title>
+		<link rel="stylesheet" type="text/css" href="css/wms-index.css"/>
+		<script src="js/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/wms-index.js" type="text/javascript" charset="utf-8"></script>			
+		<!--引用icon-->
+		<link rel="stylesheet" type="text/css" href="linearicons/style.css"/>
+		<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css"/>
+		<!--引入bootstrap-->
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
+		<script src="bootstrap/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="bootstrap/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<!--logo-->
+			<div class="brand ">
+				<a href="index.html">
+					<img src="img/zm-img/logo-small.png"/>
+				</a>
+			</div>
+			<!--除logo以外的东西-->
+			<div class="container-fluid">
+				<div class="navbar-btn">
+					<button type="button" id="btn-sidebar">
+						<i class="lnr lnr-arrow-left-circle"></i>
+					</button>
+				</div>
+				<!--搜索-->
+				<form class="navbar-form navbar-left">
+					<div class="input-group">
+						<input type="text" value="" class="form-control" placeholder="Search...">
+						<span class="input-group-btn"><button type="button" class="btn btn-primary">搜索</button></span>
+					</div>
+				</form>
+				<!--右边选项-->
+				<div id="navbar-menu">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle icon-menu" data-toggle="dropdown" aria-expanded="false">
+								<i class="lnr lnr-alarm"></i>
+								<span class="badge bg-danger">5</span>
+							</a>
+							<ul class="dropdown-menu navbar-new">
+								<li><a href="#"><span class="dot bg-warning"></span>系统空间几乎满了</a></li>
+								<li><a href="#"><span class="dot bg-danger"></span>你有9个未完成的任务</a></li>
+								<li><a href="#"><span class="dot bg-success"></span>每月可用报告</a></li>
+								<li><a href="#"><span class="dot bg-warning"></span>每周会议</a></li>
+								<li><a href="#"><span class="dot bg-success"></span>您的请求已获批准</a></li>
+								<li><a href="#" class="more">查看所有通知</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="lnr lnr-question-circle"></i> <span>帮助中心</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">基本用法</a></li>
+								<li><a href="#">使用数据</a></li>
+								<li><a href="#">安全</a></li>
+								<li><a href="#">故障排除</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><img src="img/zm-img/user.png" alt="Avatar"> <span>Admin</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
+							<ul class="dropdown-menu">
+								<li><a href="#"><i class="lnr lnr-user"></i> <span>我的账户</span></a></li>
+								<li><a href="#"><i class="lnr lnr-envelope"></i> <span>信息</span></a></li>
+								<li><a href="#"><i class="lnr lnr-cog"></i> <span>设置</span></a></li>
+								<li><a href="#"><i class="lnr lnr-exit"></i> <span>登出</span></a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!--侧边导航-->
+		<div id="sidebar-nav" class="sidebar" >
+			<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 95%;">
+				<div class="sidebar-scroll" style="overflow: auto; width: auto; height: 95%;">
+					<nav>
+						<ul class="nav">
+							<li><a href="wms-index.html" class="active"><i class="lnr lnr-home"></i> <span>Dashboard</span></a></li>
+							<li><a href="#" class=""><i class="lnr lnr-code"></i> <span>Elements</span></a></li>
+							<li><a href="#" class=""><i class="lnr lnr-chart-bars"></i> <span>Charts</span></a></li>
+							<li><a href="#" class=""><i class="lnr lnr-cog"></i> <span>Panels</span></a></li>
+							<li><a href="#" class=""><i class="lnr lnr-alarm"></i> <span>Notifications</span></a></li>
+							<li>
+								<a href="#subPages" data-toggle="collapse" class="collapsed"><i class="lnr lnr-file-empty"></i> <span>Pages</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+								<div id="subPages" class="collapse ">
+									<ul class="nav">
+										<li><a href="#" class="">Profile</a></li>
+										<li><a href="#" class="">Login</a></li>
+										<li><a href="#" class="">Lockscreen</a></li>
+									</ul>
+								</div>
+							</li>
+							<li><a href="#" class=""><i class="lnr lnr-dice"></i> <span>Tables</span></a></li>
+							<li><a href="#" class=""><i class="lnr lnr-text-format"></i> <span>Typography</span></a></li>
+							<li><a href="#" class=""><i class="lnr lnr-linearicons"></i> <span>Icons</span></a></li>
+						</ul>
+					</nav>
+				</div>				
+			</div>
+			
+		</div>
+		<!--主内容-->
+		<div class="main">
+			<div class="main-content">
+				<div class="container-fluid">
+					<div class="panel panel-heading">
+						<div class="panel-heading">
+							<h3 class="panel-title">每周数据</h3>
+							<p class="panel-time">时间：2018年10月14日 - 2016年10月21日</p>
+						</div>
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-md-3">
+									<div class="metric clearfix">
+										<span class="icon"><i class="fa fa-download"></i></span>
+										<p>
+											<span class="number"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1,252 </font></font></span>
+											<span class="title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下载</font></font></span>
+										</p>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="metric">
+										<span class="icon"><i class="fa fa-shopping-bag"></i></span>
+										<p>
+											<span class="number"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">203 </font></font></span>
+											<span class="title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">销售</font></font></span>
+										</p>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="metric">
+										<span class="icon"><i class="fa fa-eye"></i></span>
+										<p>
+											<span class="number"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">274,678次</font></font></span>
+											<span class="title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">访问</font></font></span>
+										</p>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="metric">
+										<span class="icon"><i class="fa fa-bar-chart"></i></span>
+										<p>
+											<span class="number"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">35％的</font></font></span>
+											<span class="title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">转换次数</font></font></span>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-9">
+									<div id="headline-chart">
+										<svg xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="100%" height="300" class="ct-chart-line" style="width: 100%; height: 300;">
+											<g class="ct-grids">
+												<line y1="265" y2="265" x1="50" x2="717.75" class="ct-grid"></line>
+												<line y1="229" y2="229" x1="50" x2="717.75" class="ct-grid"></line>
+												<line y1="193" y2="193" x1="50" x2="717.75" class="ct-grid"></line>
+												<line y1="157" y2="157" x1="50" x2="717.75" class="ct-grid"></line>
+												<line y1="122" y2="122" x1="50" x2="717.75" class="ct-grid"></line>
+												<line y1="86" y2="86" x1="50" x2="717.75" class="ct-grid"></line>
+												<line y1="50" y2="50" x1="50" x2="717.75" class="ct-grid"></line>
+												<line y1="15" y2="15" x1="50" x2="717.75" class="ct-grid"></line>
+											</g>
+											<g>
+												<g class="ct-series ct-series-a">
+													<path d="M50,265 L50,172.143 L161.292,129.286L272.583,165L383.875,50.714L495.167,157.857L606.458,165L717.75,86.429L717.75,265Z" class="ct-area"></path>
+												</g>
+												<g class="ct-series ct-series-b">
+													<path d="M50,265L50,236.429L161.292,157.857L272.583,207.857L383.875,93.571L495.167,129.286L606.458,65L717.75,22.143L717.75,265Z" class="ct-area"></path>
+												</g>
+											</g>
+											<g class="ct-labels">
+												<foreignObject style="overflow: visible;" x="50" y="270" width="111.29166666666667" height="20">
+													<span class="ct-label ct-horizontal ct-end" style="width: 111px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">Mon</span>
+												</foreignObject>
+												<foreignObject style="overflow: visible;" x="161.29166666666669" y="270" width="111.29166666666667" height="20">
+													<span class="ct-label ct-horizontal ct-end" style="width: 111px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">Tue</span>
+												</foreignObject>
+												<foreignObject style="overflow: visible;" x="272.58333333333337" y="270" width="111.29166666666666" height="20">
+													<span class="ct-label ct-horizontal ct-end" style="width: 111px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">Wed</span>
+												</foreignObject>
+												<foreignObject style="overflow: visible;" x="383.875" y="270" width="111.29166666666669" height="20">
+													<span class="ct-label ct-horizontal ct-end" style="width: 111px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">Thu</span>
+												</foreignObject>
+												<foreignObject style="overflow: visible;" x="495.1666666666667" y="270" width="111.29166666666669" height="20">
+													<span class="ct-label ct-horizontal ct-end" style="width: 111px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">Fri</span>
+												</foreignObject>
+												<foreignObject style="overflow: visible;" x="606.4583333333334" y="270" width="111.29166666666663" height="20">
+													<span class="ct-label ct-horizontal ct-end" style="width: 111px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">Sat</span>
+												</foreignObject>
+												<foreignObject style="overflow: visible;" x="717.75" y="270" width="30" height="20">
+													<span class="ct-label ct-horizontal ct-end" style="width: 30px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">Sun</span>
+												</foreignObject>
+												<foreignObject style="overflow: visible;" y="229.28571428571428" x="10" height="35.714285714285715" width="30">
+													<span class="ct-label ct-vertical ct-start" style="height: 36px; width: 30px" xmlns="http://www.w3.org/2000/xmlns/">10</span>
+												</foreignObject>
+												<foreignObject style="overflow: visible;" y="193.57142857142856" x="10" height="35.714285714285715" width="30">
+													<span class="ct-label ct-vertical ct-start" style="height: 36px; width: 30px" xmlns="http://www.w3.org/2000/xmlns/">15</span>
+												</foreignObject><foreignObject style="overflow: visible;" y="157.85714285714283" x="10" height="35.71428571428571" width="30">
+													<span class="ct-label ct-vertical ct-start" style="height: 36px; width: 30px" xmlns="http://www.w3.org/2000/xmlns/">20</span>
+												</foreignObject>
+												<foreignObject style="overflow: visible;" y="122.14285714285714" x="10" height="35.71428571428572" width="30">
+													<span class="ct-label ct-vertical ct-start" style="height: 36px; width: 30px" xmlns="http://www.w3.org/2000/xmlns/">25</span>
+												</foreignObject>
+												<foreignObject style="overflow: visible;" y="86.42857142857142" x="10" height="35.71428571428572" width="30">
+													<span class="ct-label ct-vertical ct-start" style="height: 36px; width: 30px" xmlns="http://www.w3.org/2000/xmlns/">30</span>
+												</foreignObject>
+												<foreignObject style="overflow: visible;" y="50.71428571428572" x="10" height="35.714285714285694" width="30">
+													<span class="ct-label ct-vertical ct-start" style="height: 36px; width: 30px" xmlns="http://www.w3.org/2000/xmlns/">35</span>
+												</foreignObject>
+												<foreignObject style="overflow: visible;" y="15" x="10" height="35.71428571428572" width="30">
+													<span class="ct-label ct-vertical ct-start" style="height: 36px; width: 30px" xmlns="http://www.w3.org/2000/xmlns/">40</span>
+												</foreignObject>
+												<foreignObject style="overflow: visible;" y="-15" x="10" height="30" width="30">
+													<span class="ct-label ct-vertical ct-start" style="height: 30px; width: 30px" xmlns="http://www.w3.org/2000/xmlns/">45</span>
+												</foreignObject>
+											</g>
+										</svg>
+									</div>
+								</div>
+								<div class="col-md-3">
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>
