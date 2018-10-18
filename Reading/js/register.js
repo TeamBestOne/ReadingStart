@@ -136,18 +136,25 @@ $(function(){
 })
 $(function(){
 	$(".btnreg").click(function(){
-		var errortip=$(".error-tip").css("display");
-		var psdtip= $(".psd-tip").css("display");
-		var picyz= $(".btnyzsucc").css("display");
-		if(errortip=="none" && psdtip=="none"){
-			$("form").hide();
-			$(".reg-success").show();
-			$(".reg-step span:last-child").addClass("act");
-			$(".reg-step em").css("background","url(img/zm-img/zhuce1.png) no-repeat");
-			var phonum=$("#txtphonenumber").val();
-			$(".red").html(phonum);
-			jumpTime();
+		if($(".deal div").hasClass("login-check-act")){
+			var errortip=$(".error-tip").css("display");
+			var psdtip= $(".psd-tip").css("display");
+			var picyz= $(".btnyzsucc").css("display");
+			var phonenumber= $("#txtphonenumber").val();
+			var phonecode=$("#txtphonecode").val();
+			var pwd1 =$("#txtphonepwd").val();
+			var pwd2 =$("#txtphonepwd2").val();
+			if(phonenumber !="" && phonecode !="" && pwd1!="" && pwd2!="" && errortip=="none" && psdtip=="none"){
+				$("form").hide();
+				$(".reg-success").show();
+				$(".reg-step span:last-child").addClass("act");
+				$(".reg-step em").css("background","url(img/zm-img/zhuce1.png) no-repeat");
+				var phonum=$("#txtphonenumber").val();
+				$(".red").html(phonum);
+				jumpTime();
+			}
 		}
+		
 	})
 })
 
