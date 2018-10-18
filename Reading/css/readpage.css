@@ -1,0 +1,229 @@
+body{
+	background: url(../img/img_slin/readbg2.jpg) repeat !important;
+}
+.readheader{
+	width: 100%;
+	height: 60px;
+	background: rgba(255,255,255,.4);
+	margin-bottom: 16px;
+}
+
+.headercenter{
+	min-width: 800px;
+	max-width: 1200px;
+	height: 60px;
+	margin: 0px auto;
+}
+.headlogo {
+	display: inline-block;
+}
+.headlogo img{
+	height: 60px;
+}
+.headercenter_menu{
+	height: 60px;
+	display: inline-block;
+}
+.headercenter_menu ul{
+	margin: 0px;
+	padding: 0px;
+}
+.headercenter_menu ul li{
+	line-height: 60px;
+	height: 60px;
+	padding: 0px 15px;
+	margin: 0px;
+	position: relative;
+	cursor: pointer;
+}
+.headercenter_menu ul li i{
+	display: inline-block;
+	vertical-align: middle;
+}
+.headercenter_menu ul li cite,.headercenter_menu ul li cite i{
+	font-style: normal;
+}
+.menu_hover{
+	background: #FFFFFF;
+	border-top: 2px solid #ed4259;
+	line-height: 58px !important;
+	height: 58px !important;
+}
+.menu_dropdown{
+	background: #FFFFFF;
+	position: absolute;
+	/*top: 60px;*/
+	left: 0px;
+	padding: 25px;
+}
+.menu_dropdown p{
+	font-size: 14px;
+	margin: 0px ;
+	padding: 0px;
+	line-height: 20px;
+	text-align: center;
+}
+.menu_dropdown .code_sk{
+	width: 96px;
+	height: 96px;
+	margin: 24px auto;
+	display: block;
+	padding: 8px;
+	border: 1px solid #d8d8d8;
+}
+.menu_dropdown .app_down,.menu_dropdown .and_down{
+	width: 178px;
+	height: 40px;
+	border: 1px solid #A6A6A6;
+	display: inline-block;
+	line-height: 40px;
+	text-align: center;
+	margin: 0px auto;
+}
+.menu_dropdown .app_down:hover,.menu_dropdown .and_down:hover{
+	color: #ed4259;
+	text-decoration: none;
+}
+.recentread .menu_dropdown{
+	
+}
+.headercenter_right{
+	height: 60px;
+	/*line-height: 60px;*/
+}
+.headercenter_right .searchtext{
+	width: 150px;
+	height: 26px;
+	border: none;
+	border-bottom: 1px solid #CCCCCC;
+	background: none;
+	margin-top: 15px;
+}
+.headercenter_right .searchbtn{
+	height: 26px;
+	width: 20px;
+	display: inline-block;
+	border: none;
+	vertical-align: middle;
+	margin-right: 5px;
+	background: url(../img/img_slin/search.png) no-repeat 5px;
+}
+.headercenter_right a{
+	display: inline-block;
+	padding: 0px 5px;
+	color: #262626;
+}
+.headercenter_right a:hover{
+	text-decoration: none;
+	color: #ed4259;
+}
+.can_nav{
+	width: 800px;
+	height: 22px;
+	margin: 0px auto 21px auto;
+}
+.can_nav a{
+	display: inline-block;
+	color: #1A1A1A;
+	font-size: 12px;
+}
+.can_nav a:hover{
+	text-decoration: underline;
+}
+.can_nav .iconright{
+	font-size: 12px !important;
+	padding: 0px 2px;
+}
+.page_reader{
+	width: 798px;
+	border: 1px solid #CCCCCC;
+	margin: 0px auto;
+	background: url(../img/img_slin/readpagebg.png) repeat;
+	margin-bottom: 20px;
+}
+.read_content{
+	margin: 8px;
+	height: 662px;
+	border: 1px solid #CCCCCC;
+}
+.raedbook_img{
+	width: 128px;
+	height: 168px;
+	margin: 64px auto 24px;
+	border: 1px solid #E5E5E5;
+	background: #fffbf2;
+}
+.raedbook_img img{
+	width: 120px;
+	height: 160px;
+	margin: 4px;
+}
+.read_content .bookname{
+	font-size: 32px;
+	height: 45px;
+	line-height: 45px;
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 7px;
+}
+.read_content .authorname{
+	font-size: 14px;
+	height: 26px;
+	line-height: 26px;
+	margin-bottom: 48px;
+	color: #999999;
+}
+.read_content .authorname a{
+	margin-right: 5px;
+	color: #94918b;
+}
+.read_content .authorname a:hover{
+	color: #A71D5D;
+}
+.book_info{
+	margin: 0px auto 48px auto;
+	width: 400px;
+}
+.book_info ul {
+	margin: 0px;
+}
+.book_info ul li{
+	text-align: center;
+	margin-right: 94px;
+	padding: 0px;
+}
+
+.book_info ul li p{
+	font-size: 18px;
+	margin-bottom: 5px;
+	color: #262626;
+}
+.book_info ul li span{
+	font-size: 12px;
+	color: #94918b;
+}
+.read_content h3{
+	height: 26px;
+	line-height: 26px;
+	font-size: 16px;
+	margin-bottom: 8px;
+}
+.read_content h4{
+	font-size: 12px;
+	margin-bottom: 48px;
+}
+.read_content h4 em{
+	font-style: normal;
+}
+.read_content h4 a:hover{
+	text-decoration: none;
+}
+.read_content h5{
+	font-size: 14px;
+	line-height: 26px;
+	color: #666666;
+}
+.read_content h6{
+	font-size: 12px;
+	line-height: 26px;
+}

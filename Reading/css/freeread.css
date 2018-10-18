@@ -169,6 +169,10 @@ header{
 	width: 142px;
 	margin: 20px!important;
 	box-shadow: 0 1px 6px rgba(0,0,0,.35), 0 0 5px #f9f2e9 inset;
+	transition: transform .3s ease-out;
+}
+.book-img img:hover{
+	transform: scale(1.1);
 }
 .writer{font-size: 16px;}
 .writer a{margin:0 10px 0 20px;}
@@ -219,6 +223,7 @@ header{
 	right:39px;
 	text-align: right;
 }
+.star img{width: 28px;}
 .book-score>span{font-size: 37px;font-weight: 700;}
 .book-score>span i{font-size: 30px;}
 .book-score p:first>span{margin-right: 5px;color: gray;}
@@ -232,6 +237,10 @@ header{
 .t1 li{border-bottom: 2px solid white;margin-right: 5px;padding:0 23px  5px 23px;}
 .t1 li:first-child{
 	border-bottom: 2px solid #ed4259;
+	
+}
+.t1 li:nth-of-type(2){
+	border-bottom: 2px solid white;
 	
 }
 .t1 li a:link,.t1 li a:visited{color: gray;text-decoration: none;}
@@ -268,7 +277,7 @@ header{
 	width: 700px;
 	background: #F7F6F2;
 }
-.fans li{float: left;text-align: center;border-right: 1px solid #e6e6e6;margin: 20px 0;width: 232px;}
+.fans>li{float: left;text-align: center;border-right: 1px solid #e6e6e6;margin: 20px 0;width: 232px;}
 .ticket p:nth-of-type(2){font-weight: 700;font-size: 30px;}
 .ticket h4 a:link,.ticket h4 a:visited{color: gray;text-decoration: none;}
 .ticket h4 a:hover{text-decoration: none;color: #ed4259;}
@@ -356,17 +365,44 @@ header{
 	margin-bottom: 20px;
 	margin: 20px;
 }
+/*文字上下滚动*/
 .scroll-div{
 	overflow: hidden;
 	height: 115px;
+	margin: 0 20px;
 }
-.money{
+.fans-slide{
+	margin-top: 0;
+}
+.fans-slide li{
+	font: 12px/28px PingFangSC-Regular,'-apple-system',Simsun;
+    overflow: hidden;
+    height: 28px;
+    text-align: left;
+    border-top: 1px solid #e5e5e5;
+    margin: 0;
+}
+.fans-slide li a:hover{color: red;}
+.fans-slide li>span{color: gray;padding: 0 2px;}
+.fans-slide li>em{
+	float: right;
+	
+	margin-top: 7px;
 	width: 14px;
     height: 14px;
-    background-image: url(/qd/images/book_details/sprite.385d7.png);
-    background-repeat: no-repeat;
-    background-position: -320px -188px;
-    background-size: 335px;
+    display: inline-block;
+    background: url(../img/image1/sprite.385d7.png) no-repeat;
+    
+}
+.money{
+	background-position: -320px -188px !important;
+	margin-right: 2px;
+}
+.rec{
+	background-position: -325px -138px!important;
+}
+.month{
+	background-position: -323px -164px!important;
 }
 .small-adver{margin: 30px 0 37px;width: 700px;}
 .small-adver img:nth-of-type(2){margin-left: 7px;}
@@ -437,7 +473,7 @@ header{
 }
 .content-sty2 p:nth-of-type(3) a:first-child{margin: 0 20px;}
 .content-sty2 p:nth-of-type(3) img{vertical-align: text-bottom;margin-right: 8px;}
-.go-discuss{background: #F7F6F2;text-align: center;}
+.go-discuss{background: #F7F6F2;text-align: center;margin-bottom: 25px;}
 .go-discuss a{line-height: 42px;font-size: 14px;}
 .go-discuss a:link,.go-discuss a:visited{text-decoration: none;}
 /*作者右边*/
@@ -579,7 +615,38 @@ tr a:hover{color: #ed4259;}
 	background: #FC6C28;
 	margin: 0 5px;
 }
-.span2 td{background: url(../img/image1/lock.jpg) no-repeat 5px 5px;}
+.table2{margin-bottom: 30px;}
+.table2 td{background: url(../img/image1/lock.jpg) no-repeat 267px 12px;}
+/*讨论区页面*/
+.title-dis{    height: 72px;
+    background: #f7f6f2;}
+.title-dis h2{
+	line-height: 72px;
+    width: 990px;
+    margin: 0 auto;
+    font-size: 24px;
+}
+.title-dis h2 a:hover{color: #ED4259;text-decoration: none;}
+.main-wrap{
+	    width: 990px;
+	    min-height: 450px;
+	    min-height: calc(100vh - 310px);
+	    margin: 0 auto;
+	    padding-top: 20px;
+}
+
+/*内容左边布局*/
+.main-wrap-fl{
+	float: left;
+	width: 700px;
+	
+}
+/*内容右边布局*/
+.main-wrap-fr{
+	float: left;
+	width: 700px;
+	
+}
 /*下拉菜单1*/
 .menu1{
 	position: absolute;
