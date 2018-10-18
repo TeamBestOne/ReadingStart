@@ -10,11 +10,11 @@ $(function(){
 		$(this).css("border","solid 1px #ffb0b4");
 	})
 	//星星评价
-//	$(".star>img").hover(function(){
-//		$(this).attr("src","img/image1/star4.png")
-//	},function(){
-//		$(this).attr("src","img/image1/star2.png")
-//	})
+	$(".star>img").hover(function(){
+		$(this).attr("src","img/image1/star4.png")
+	},function(){
+		$(this).attr("src","img/image1/star2.png")
+	})
 //	$(".star>img").each(function(index){
 //		$(this).hover(function(){
 //			alert(index)
@@ -60,16 +60,15 @@ $(function(){
 			$(this).css("border-bottom","solid 2px #ed4259").siblings().css("border-bottom","solid 2px white");
 		})
 	})
+     
 	
 })
 //文字上下滚动
-     function scrollDiv(){
-     	$("#fans-line").animate({marginTop:"-27px"},500,function(){
-     		$(this).css("margin-top","0").find("li:eq(0)").appendTo($(this));
-     		
-     	})
-     }
-     $(function(){  
-			setInterval('scrollDiv()',3000);
-			  
-		})
+function scrollDiv(){
+ 	$("#fans-line").animate({marginTop:"-27px"},500,function(){
+ 		$(this).css("margin-top","0").find("li:eq(0)").appendTo($(this));		
+ 	})
+}
+$(function(){  
+	setInterval('scrollDiv()',3000);		  
+})

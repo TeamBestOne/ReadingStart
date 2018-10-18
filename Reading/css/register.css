@@ -20,20 +20,20 @@ header{
 .hd-logo a{
 	display: block;
 	float: left;
-	width: 218px;
-	height: 57px;
-	background: url(../img/zm-img/loginlogo.png) no-repeat;
+	width: 250px;
+	height: 60px;
+	background: url(../img/img_slin/readlogo.png) no-repeat;
 }
 .hd-logo em{
 	height: 24px;
 	float: left;
-	margin: 15px 24px 0;
+	margin: 25px 24px 0;
 	border-right: 1px solid #D8D8D8;
 }
 .hd-logo span{
 	font-size: 24px;
 	float: left;
-	margin-top: 15px;
+	margin-top: 20px;
 	font-weight: 400;
 }
 .reg-step{
