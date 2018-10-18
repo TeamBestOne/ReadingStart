@@ -1422,7 +1422,6 @@ h3.wrap-title i {
     box-shadow: 0 1px 8px #7f7f7f;
 }
 .roundabout li.book1 {
-    z-index: 280;
     top: -13px;
     left: 18px;
     width: 84px;
@@ -1432,7 +1431,6 @@ h3.wrap-title i {
     font-size: 0.16rem;
 }
 .roundabout li.book2 {
-    z-index: 145;
     top: -1px;
     left: 75px; 
     width: 65.1px;
@@ -1442,7 +1440,6 @@ h3.wrap-title i {
     font-size: 0.124rem; 
 }
 .roundabout li.book3 {
-    z-index: 145;
     top: -1px;
     left: -20px;
     width: 65.1px;
