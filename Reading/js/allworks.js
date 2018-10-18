@@ -41,7 +41,7 @@ $(function(){
 	
 	//点击在"已选"中显示
 	
-	$(".worksmain_aside_selectlist_per ul li").click(function(){
+	$(".worksmain_aside_selectlist_per ul li:not(.li_all)").click(function(){
 //		var typeno = 0;
 //		if(typeno=0){
 //			
@@ -94,10 +94,11 @@ $(function(){
 	
 	//点击在"×"删除所选
 	$(".worksmain_aside_selected_item").on("click",".select_type",function(){
-		var selectNo = $(this).parent().find(".select_type").length;
+		var selectNo = $(this).parent().find(".select_type").attr("display","none").length;
+		alert(selectNo)
 		$(this).remove();
-		if(selectNo == 1){
-			$(".worksmain_aside_selected_item .all_type").show();
+		if(selectNo == 0){
+			$(".worksmain_aside_selected_item .all_type").css("display","inline-block");
 		}
 	})
 	
