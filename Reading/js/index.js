@@ -106,13 +106,13 @@ $(function(){
 $(function(){
 	$(".focus-wrap .notice-wrap .notice").hover(function(){
 		$(".notice .more i").stop(true,false).animate({
-			"top":"18px",
-			"right":"18px"
+			top:"18px",
+			right:"18px"
 		},400)
 	},function(){
 		$(".notice .more i").stop(true,false).animate({
-			"top":"-18px",
-			"right":"-18px"
+			top:"-18px",
+			right:"-18px"
 		},400)
 	})
 })
@@ -245,4 +245,153 @@ $(function(){
 			$updateList.children(".update-table.vip").show().siblings().hide();
 		}
 	})
+})
+
+//限时免费倒计时
+$(function(){
+	var day = parseInt($("#time-box .day").text());
+	var hour = parseInt($("#time-box .hour").text());
+	var min = parseInt($("#time-box .minute").text());
+	var sec = parseInt($("#time-box .second").text());
+	var startTime = day*24*60*60+hour*60*60+min*60+sec;
+	var day1 = 0;
+	var hour1 = 0;
+	var min1 = 0;
+	setInterval(cdTime,1000);
+	function cdTime(){
+		if(startTime > 0){
+			startTime--;
+			day = Math.floor(startTime/(60*60*24));
+			hour = Math.floor((startTime/(60*60)))-(day*24);
+			min = Math.floor(startTime/(60)) - (day*24*60) - (hour*60);
+			sec = Math.floor(startTime)-(day*24*60*60) - (hour*60*60) - (min*60);
+			$("#time-box .day").text(day);
+			$("#time-box .hour").text(hour);
+			$("#time-box .minute").text(min);
+			$("#time-box .second").text(sec);		
+		}
+	}
+})
+
+/*Jq旋转木马式轮播*/
+$(function(){
+	var arr = [
+		{	/*1*/
+			top: "-13px",
+		    left: "18px",
+		    width: "84px",
+		    height: "112px",
+		    opacity: "1",
+		    zIndex: "280",
+		    fontSize: "0.16rem"
+		},
+		{	/*2*/
+			top: "-1px",
+		    left: "75px",
+		    width: "65.1px",
+		    height: "86.8px",
+		    opacity: "0.85",
+		    zIndex: "145",
+		    fontSize: "0.124rem"
+		},
+		{	/*3*/
+			top: "-1px",
+		    left: "-20px",
+		    width: "65.1px",
+		    height: "86.8px",
+		    opacity: "0.85",
+		    zIndex: "145",
+		    fontSize: "0.124rem"
+		}
+	]
+	
+	var leftTime = null;
+	var leftmoveTime = 2500;
+	var $Imgtab = $("#left-slide-01 li");
+	var $Imgnum = $("#left-slide-01 li").length;
+	var Imgnow = 1;
+	var $infoTxt = $("#left-slide-01").parent().next(".info-text").find("dd");
+	
+	function leftSlide(){
+		arr.unshift(arr.pop());
+		Imgnow++;
+		for(var i =0;i<$Imgnum;i++){
+			$Imgtab.eq(i).animate(
+				arr[i],500
+			);		
+		}
+		if(Imgnow > 3){
+			Imgnow = 1;
+		}
+		$infoTxt.eq(Imgnow-1).show().siblings().hide();
+		console.log(Imgnow);
+	}
+	
+	leftTime = setInterval(leftSlide,leftmoveTime);
+	
+/*	$("#left-slide-01 li").on("click",function(){
+		console.log($(this).index())
+		return false;
+	})*/
+})
+
+$(function(){
+	var arr3 = [
+		{	/*1*/
+			top: "-13px",
+		    left: "18px",
+		    width: "84px",
+		    height: "112px",
+		    opacity: "1",
+		    zIndex: "280",
+		    fontSize: "0.16rem"
+		},
+		{	/*2*/
+			top: "-1px",
+		    left: "75px",
+		    width: "65.1px",
+		    height: "86.8px",
+		    opacity: "0.85",
+		    zIndex: "145",
+		    fontSize: "0.124rem"
+		},
+		{	/*3*/
+			top: "-1px",
+		    left: "-20px",
+		    width: "65.1px",
+		    height: "86.8px",
+		    opacity: "0.85",
+		    zIndex: "145",
+		    fontSize: "0.124rem"
+		}
+	]
+	
+	var leftTime3 = null;
+	var leftmoveTime3 = 2500;
+	var $Imgtab3 = $("#left-side-03 li");
+	var $Imgnum3 = $("#left-side-03 li").length;
+	var Imgnow3 = 1;
+	var $infoTxt3 = $("#left-side-03").parent().next(".info-text").find("dd");
+	
+	function leftSlide3(){
+		arr3.unshift(arr3.pop());
+		Imgnow3++;
+		for(var i =0;i<$Imgnum3;i++){
+			$Imgtab3.eq(i).animate(
+				arr3[i],500
+			);		
+		}
+		if(Imgnow3 > 3){
+			Imgnow3 = 1;
+		}
+		$infoTxt3.eq(Imgnow3-1).show().siblings().hide();
+		console.log(Imgnow3);
+	}
+	
+	leftTime3 = setInterval(leftSlide3,leftmoveTime3);
+	
+/*	$("#left-slide-01 li").on("click",function(){
+		console.log($(this).index())
+		return false;
+	})*/
 })
