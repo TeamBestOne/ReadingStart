@@ -1,11 +1,11 @@
 /*图标*/
 @font-face {
   font-family: 'iconfont';  /* project id 870868 */
-  src: url('//at.alicdn.com/t/font_870868_q2ka95ro0ti.eot');
-  src: url('//at.alicdn.com/t/font_870868_q2ka95ro0ti.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_870868_q2ka95ro0ti.woff') format('woff'),
-  url('//at.alicdn.com/t/font_870868_q2ka95ro0ti.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_870868_q2ka95ro0ti.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_870868_p7igblgphof.eot');
+  src: url('//at.alicdn.com/t/font_870868_p7igblgphof.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_870868_p7igblgphof.woff') format('woff'),
+  url('//at.alicdn.com/t/font_870868_p7igblgphof.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_870868_p7igblgphof.svg#iconfont') format('svg');
 }
 .iconfont{
     font-family:"iconfont" !important;
@@ -146,6 +146,9 @@ ul,li{
 }
 .close-icon{
 	font-size: 12px !important;
+}
+.worksmain_aside_selected_item .select_type{
+	display: none;
 }
 .select_type,.all_type{
 	padding: 2px 4px;
@@ -371,6 +374,9 @@ ul,li{
 	font-size: 12px;
 	vertical-align: middle;
 	padding: 2px 0px;
+}
+.books_info_author>i{
+	font-size: 12px;
 }
 .books_info_author a,.books_info_author span{
 	color: #a6a6a6;

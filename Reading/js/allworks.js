@@ -42,16 +42,53 @@ $(function(){
 	//点击在"已选"中显示
 	
 	$(".worksmain_aside_selectlist_per ul li").click(function(){
-		var typeno = 0;
-		if(typeno=0){
-			
-		}else{
-			var title = $(this).find("a").text();
-			
-			var addselect = "<a class='select_type'>"+title+"<i class='close-icon iconfont'>&#xe642;</i></a>";
-			$(".worksmain_aside_selected_item").append(addselect);
-			$(".worksmain_aside_selected_item .all_type").hide();
+//		var typeno = 0;
+//		if(typeno=0){
+//			
+//		}else{
+//			var title = $(this).find("a").text();
+//			
+//			var addselect = "<a class='select_type'>"+title+"<i class='close-icon iconfont'>&#xe642;</i></a>";
+//			$(".worksmain_aside_selected_item").append(addselect);
+//			$(".worksmain_aside_selected_item .all_type").hide();
+//		}
+		var typename = $(this).parents(".worksmain_aside_selectlist_per").find("p").text();
+		var title = $(this).find("a").text();
+		$(".worksmain_aside_selected_item .all_type").hide();
+		switch (typename){
+			case "分类":
+				$(".worksmain_aside_selected_item .se_tpye").css("display","inline-block");
+				$(".worksmain_aside_selected_item .se_tpye").html(title+"<i class='close-icon iconfont'>&#xe642;</i>");
+				break;
+			case "状态":
+				$(".worksmain_aside_selected_item .se_status").css("display","inline-block");
+				$(".worksmain_aside_selected_item .se_status").html(title+"<i class='close-icon iconfont'>&#xe642;</i>");
+				break;
+			case "属性":
+				$(".worksmain_aside_selected_item .se_property").css("display","inline-block");
+				$(".worksmain_aside_selected_item .se_property").html(title+"<i class='close-icon iconfont'>&#xe642;</i>");
+				break;
+			case "字数":
+				$(".worksmain_aside_selected_item .se_charnum").css("display","inline-block");
+				$(".worksmain_aside_selected_item .se_charnum").html(title+"<i class='close-icon iconfont'>&#xe642;</i>");
+				break;
+			case "品质":
+				$(".worksmain_aside_selected_item .se_quality").css("display","inline-block");
+				$(".worksmain_aside_selected_item .se_quality").html(title+"<i class='close-icon iconfont'>&#xe642;</i>");
+				break;
+			case "更新时间":
+				$(".worksmain_aside_selected_item .se_uptime").css("display","inline-block");
+				$(".worksmain_aside_selected_item .se_uptime").html(title+"<i class='close-icon iconfont'>&#xe642;</i>");
+				break;
+			case "标签":
+				$(".worksmain_aside_selected_item .se_tip").css("display","inline-block");
+				$(".worksmain_aside_selected_item .se_tip").html(title+"<i class='close-icon iconfont'>&#xe642;</i>");
+				break;
+			default:
+				break;
 		}
+
+
 		
 	})
 	
@@ -192,4 +229,23 @@ $(function(){
 			console.log(startTime +"-"+day +"-"+ hour +"-"+ min +"-"+ sec);
 		}
 	}
+})
+
+
+//阅读页面置顶
+$(function(){
+	$(window).scroll(function(){
+		if($(window).scrollTop()>500){
+			$(".float_control").css("display","inline-block");
+		}else{
+			$(".float_control").css("display","none");
+		}
+		
+	})
+	
+	$(".float_control i").click(function(){
+		$("html,body").animate({
+			scrollTop:0
+		}, 500);
+	})
 })

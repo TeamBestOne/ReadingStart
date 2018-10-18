@@ -227,3 +227,125 @@ body{
 	font-size: 12px;
 	line-height: 26px;
 }
+.read_contentmain{
+	padding: 60px 64px;
+}
+.text_header{
+	margin-bottom: 12px;
+}
+.text_header h3{
+	font-size: 24px;
+	line-height: 32px;
+	margin: 0px 0px 12px 0px;
+}
+.read_contentmain_info{
+	font-size: 12px;
+	line-height: 16px;
+	height: 34px;
+}
+.contentmain_info_l a,.contentmain_info_l span{
+	margin-right: 15px;
+	color: #999999;
+}
+.contentmain_info_l i{
+	margin-right: 5px;
+}
+.contentmain_info_r a{
+	color: #999999;
+}
+.contentmain_info_l a:hover{
+	color: #ed4259;
+	text-decoration: none;
+}
+.contentmain_info_r a{
+	padding: 5px;
+}
+.contentmain_info_r a:hover{
+	text-decoration: none;
+	background: #CCCCCC;
+}
+.text_main{
+	margin-bottom: 64px;
+}
+.text_main p{
+	margin: .8em 0px;
+	line-height: 1.8;
+	font-size: 18px;
+}
+.reward{
+	
+}
+.reward .rewardbtn{
+	border-radius: 30px;
+	font-weight: 400;
+	width: 150px;
+	height: 60px;
+	display: block;
+	background: #bf2c24;
+	color: #FFFFFF;
+	font-size: 24px;
+	line-height: 60px;
+	text-align: center;
+	margin: 0px auto;
+	margin-bottom: 24px;
+}
+.reward .rewardbtn:hover{
+	background: #ed4259;
+	text-decoration: none;
+}
+.rewardperson img{
+	border-radius: 100%;
+	width: 32px;
+	height: 32px;
+}
+.rewardperson{
+	width: 224px;
+	margin: 0px auto;
+	text-align: center;
+}
+.rewardperson a{
+	display: inline-block;
+}
+.page_control{
+	width: 800px;
+	margin: 0px auto;
+	height: 70px;
+	line-height: 70px;
+	border: 1px solid #d8d8d8;
+	background: url(../img/img_slin/readpagebg.png) repeat;
+	text-align: center;
+}
+.page_control a{
+	display: inline-block;
+	width: 32%;
+	color: #262626;
+}
+/*.page_control a:nth-of-type(1){
+	width: 35%;	
+}
+.page_control a:nth-of-type(2){
+	width: 29%;	
+}
+.page_control a:nth-of-type(3){
+	width: 35%;	
+}*/
+.page_control a:hover{
+	background: #ede9e1;
+	text-decoration: none;
+}
+.float_control{
+	position: fixed;
+	right: 10%;
+	bottom: 120px;
+	display: none;
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+}
+.float_control i{
+	display: block;
+	font-size: 32px;
+}
+.float_control i:hover{
+	color: #C9302C;
+}
