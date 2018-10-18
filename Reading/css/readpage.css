@@ -335,9 +335,9 @@ body{
 }
 .float_control{
 	position: fixed;
-	right: 50%;
-	margin-right: -481px;
-	display: block;
+	right: 10%;
+	bottom: 120px;
+	display: inline-block;
 	width: 32px;
 	height: 32px;
 	cursor: pointer;
@@ -346,4 +346,6 @@ body{
 	display: block;
 	font-size: 32px;
 }
-
+.float_control i:hover{
+	color: #C9302C;
+}

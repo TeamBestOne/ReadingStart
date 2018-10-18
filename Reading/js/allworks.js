@@ -230,3 +230,13 @@ $(function(){
 		}
 	}
 })
+
+
+//阅读页面置顶
+$(function(){
+	$(".float_control i").click(function(){
+		$("html,body").animate({
+			scrollTop:0
+		}, 500);
+	})
+})
