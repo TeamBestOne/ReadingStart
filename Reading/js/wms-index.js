@@ -134,7 +134,7 @@ $(function(){
 	})
 })
 
-function editbook(){
+function addbooks(){
 	
 }
 
