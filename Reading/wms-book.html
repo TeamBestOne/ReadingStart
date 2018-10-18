@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>后台管理 | 图书信息</title>
+		<link rel="shortcut icon" type="image/x-icon" href="readicon.ico"/>
 		<link rel="stylesheet" type="text/css" href="css/wms-index.css"/>
 		<script src="js/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/wms-index.js" type="text/javascript" charset="utf-8"></script>			
@@ -22,7 +23,7 @@
 			<!--logo-->
 			<div class="brand ">
 				<a href="index.html">
-					<img src="img/zm-img/logo-small.png"/>
+					<img src="img/img_slin/readlogo.png" width="218px"/>
 				</a>
 			</div>
 			<!--除logo以外的东西-->
@@ -212,7 +213,7 @@
 							                <td>{{item.state}}</td>
 							                <td>{{item.property}}</td>
 							                <td>{{item.qualit}}</td>
-							                <td><a href="wms-edit.html">编辑</a>&nbsp;&nbsp;<a href="" style="color: red;">删除</a></td>
+							                <td><a href="wms-edit.html" onclick="editbook()">编辑</a>&nbsp;&nbsp;<a href="" style="color: red;">删除</a></td>
 							            </tr>
 							        </tbody>
 							    </table>

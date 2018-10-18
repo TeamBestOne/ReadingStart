@@ -24,9 +24,9 @@ header{
 .hd-logo a{
 	display: block;
 	float: left;
-	width: 218px;
-	height: 57px;
-	background: url(../img/zm-img/loginlogo.png) no-repeat;
+	width: 250px;
+	height: 60px;
+	background: url(../img/img_slin/readlogo.png) no-repeat;
 }
 .login-main{
 	padding: 100px 0;

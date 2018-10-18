@@ -63,13 +63,11 @@ $(function(){
 	
 })
 //文字上下滚动
-     function scrollDiv(){
-     	$("#fans-line").animate({marginTop:"-27px"},500,function(){
-     		$(this).css("margin-top","0").find("li:eq(0)").appendTo($(this));
-     		
-     	})
-     }
-     $(function(){  
-			setInterval('scrollDiv()',3000);
-			  
-		})
+function scrollDiv(){
+ 	$("#fans-line").animate({marginTop:"-27px"},500,function(){
+ 		$(this).css("margin-top","0").find("li:eq(0)").appendTo($(this));		
+ 	})
+}
+$(function(){  
+	setInterval('scrollDiv()',3000);		  
+})
