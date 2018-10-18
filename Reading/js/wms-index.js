@@ -80,6 +80,7 @@ $(function(){
 		data:{
 			list:[
 			{name:'小明',phone:'13567689210',email:'sdjo99@163.com',psd:'467hg4',account:'10'},
+			{name:'小红',phone:'15567684560',email:'3939029@163.com',psd:'skid445',account:'0'},
 			]
 		}
 	})
