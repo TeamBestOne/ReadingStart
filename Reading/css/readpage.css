@@ -337,7 +337,7 @@ body{
 	position: fixed;
 	right: 10%;
 	bottom: 120px;
-	display: inline-block;
+	display: none;
 	width: 32px;
 	height: 32px;
 	cursor: pointer;

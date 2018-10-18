@@ -234,6 +234,15 @@ $(function(){
 
 //阅读页面置顶
 $(function(){
+	$(window).scroll(function(){
+		if($(window).scrollTop()>500){
+			$(".float_control").css("display","inline-block");
+		}else{
+			$(".float_control").css("display","none");
+		}
+		
+	})
+	
 	$(".float_control i").click(function(){
 		$("html,body").animate({
 			scrollTop:0

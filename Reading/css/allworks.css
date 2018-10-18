@@ -375,6 +375,9 @@ ul,li{
 	vertical-align: middle;
 	padding: 2px 0px;
 }
+.books_info_author>i{
+	font-size: 12px;
+}
 .books_info_author a,.books_info_author span{
 	color: #a6a6a6;
 	padding: 0px 5px;
